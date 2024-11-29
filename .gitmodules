@@ -1,0 +1,7 @@
+[submodule "plugins/uEmu"]
+	path = plugins/uEmu
+	url = https://github.com/alexhude/uEmu.git
+
+[submodule "plugins/findcrypt-yara"]
+	path = plugins/findcrypt-yara
+	url = https://github.com/polymorf/findcrypt-yara.git

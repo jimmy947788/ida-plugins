@@ -95,6 +95,14 @@
         "documentation": {}
     },
     {
+        "label": "*",
+        "importPath": "idautils",
+        "description": "idautils",
+        "isExtraImport": true,
+        "detail": "idautils",
+        "documentation": {}
+    },
+    {
         "label": "FuncItems",
         "importPath": "idautils",
         "description": "idautils",
@@ -124,6 +132,14 @@
         "isExtraImport": true,
         "importPath": "idc",
         "description": "idc",
+        "detail": "idc",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "idc",
+        "description": "idc",
+        "isExtraImport": true,
         "detail": "idc",
         "documentation": {}
     },
@@ -590,6 +606,14 @@
     },
     {
         "label": "QtGui",
+        "importPath": "PyQt5",
+        "description": "PyQt5",
+        "isExtraImport": true,
+        "detail": "PyQt5",
+        "documentation": {}
+    },
+    {
+        "label": "*",
         "importPath": "PyQt5",
         "description": "PyQt5",
         "isExtraImport": true,
@@ -3059,6 +3083,14 @@
         "documentation": {}
     },
     {
+        "label": "*",
+        "importPath": "idaapi",
+        "description": "idaapi",
+        "isExtraImport": true,
+        "detail": "idaapi",
+        "documentation": {}
+    },
+    {
         "label": "o_reg",
         "importPath": "idaapi",
         "description": "idaapi",
@@ -4994,6 +5026,14 @@
         "documentation": {}
     },
     {
+        "label": "*",
+        "importPath": "PyQt5.QtWidgets",
+        "description": "PyQt5.QtWidgets",
+        "isExtraImport": true,
+        "detail": "PyQt5.QtWidgets",
+        "documentation": {}
+    },
+    {
         "label": "QDialog",
         "importPath": "PyQt5.QtWidgets",
         "description": "PyQt5.QtWidgets",
@@ -5353,6 +5393,63 @@
         "description": "pybincat.tools",
         "isExtraImport": true,
         "detail": "pybincat.tools",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "uEmu",
+        "description": "uEmu",
+        "isExtraImport": true,
+        "detail": "uEmu",
+        "documentation": {}
+    },
+    {
+        "label": "pickle",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pickle",
+        "description": "pickle",
+        "detail": "pickle",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "unicorn",
+        "description": "unicorn",
+        "isExtraImport": true,
+        "detail": "unicorn",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "unicorn.arm_const",
+        "description": "unicorn.arm_const",
+        "isExtraImport": true,
+        "detail": "unicorn.arm_const",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "unicorn.arm64_const",
+        "description": "unicorn.arm64_const",
+        "isExtraImport": true,
+        "detail": "unicorn.arm64_const",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "unicorn.mips_const",
+        "description": "unicorn.mips_const",
+        "isExtraImport": true,
+        "detail": "unicorn.mips_const",
+        "documentation": {}
+    },
+    {
+        "label": "*",
+        "importPath": "unicorn.x86_const",
+        "description": "unicorn.x86_const",
+        "isExtraImport": true,
+        "detail": "unicorn.x86_const",
         "documentation": {}
     },
     {
@@ -12539,6 +12636,213 @@
         "description": "plugins.pybincat.cfa",
         "peekOfCode": "RE_NODE_UNREL = re.compile(\n    r\"node (?P<nodeid>\\d+) - unrel (?P<unrelid>\\d+)\")\nclass PyBinCATParseError(PyBinCATException):\n    pass\nclass CFA(object):\n    \"\"\"\n    Holds Node for each defined node_id.\n    Several node_ids may share the same address (ex. loops, partitions)\n    \"\"\"\n    #: Cache to speed up value parsing. (str, length) -> [Value, ...]",
         "detail": "plugins.pybincat.cfa",
+        "documentation": {}
+    },
+    {
+        "label": "MyEmuPlugin",
+        "kind": 6,
+        "importPath": "plugins.uEmu.Extensions.MyEmu",
+        "description": "plugins.uEmu.Extensions.MyEmu",
+        "peekOfCode": "class MyEmuPlugin(uEmuPlugin):\n    ### uEmuPlugin methods override\n    def __init__(self):\n        hooks = uEmuExtensionHooks()\n        hooks.init_context = self.hook_init_context\n        hooks.trace_log = self.hook_trace_log\n        hooks.emu_step = self.hook_emu_step\n        super(MyEmuPlugin, self).__init__(\"MyEmu\", hooks)\n    def add_custom_menu(self):\n        self.MENU_ITEMS.append(UEMU_HELPERS.MenuItem(self.plugin_name + \":myemu_test\", self.myemu_test,  \"MyEmu\",  \"MyEmu\",  None,  True  ))",
+        "detail": "plugins.uEmu.Extensions.MyEmu",
+        "documentation": {}
+    },
+    {
+        "label": "myemu_log",
+        "kind": 2,
+        "importPath": "plugins.uEmu.Extensions.MyEmu",
+        "description": "plugins.uEmu.Extensions.MyEmu",
+        "peekOfCode": "def myemu_log(entry):\n    uemu_log(entry, name = \"MyEmu\")\nclass MyEmuPlugin(uEmuPlugin):\n    ### uEmuPlugin methods override\n    def __init__(self):\n        hooks = uEmuExtensionHooks()\n        hooks.init_context = self.hook_init_context\n        hooks.trace_log = self.hook_trace_log\n        hooks.emu_step = self.hook_emu_step\n        super(MyEmuPlugin, self).__init__(\"MyEmu\", hooks)",
+        "detail": "plugins.uEmu.Extensions.MyEmu",
+        "documentation": {}
+    },
+    {
+        "label": "PLUGIN_ENTRY",
+        "kind": 2,
+        "importPath": "plugins.uEmu.Extensions.MyEmu",
+        "description": "plugins.uEmu.Extensions.MyEmu",
+        "peekOfCode": "def PLUGIN_ENTRY():\n    return MyEmuPlugin()\nif MYEMU_USE_AS_SCRIPT:\n    if __name__ == '__main__':\n        MyEmu = MyEmuPlugin()\n        MyEmu.init()\n        MyEmu.run()",
+        "detail": "plugins.uEmu.Extensions.MyEmu",
+        "documentation": {}
+    },
+    {
+        "label": "MYEMU_USE_AS_SCRIPT",
+        "kind": 5,
+        "importPath": "plugins.uEmu.Extensions.MyEmu",
+        "description": "plugins.uEmu.Extensions.MyEmu",
+        "peekOfCode": "MYEMU_USE_AS_SCRIPT = True    # Set to `False` if you want to load MyEmu automatically as IDA Plugin\ndef myemu_log(entry):\n    uemu_log(entry, name = \"MyEmu\")\nclass MyEmuPlugin(uEmuPlugin):\n    ### uEmuPlugin methods override\n    def __init__(self):\n        hooks = uEmuExtensionHooks()\n        hooks.init_context = self.hook_init_context\n        hooks.trace_log = self.hook_trace_log\n        hooks.emu_step = self.hook_emu_step",
+        "detail": "plugins.uEmu.Extensions.MyEmu",
+        "documentation": {}
+    },
+    {
+        "label": "UEMU_CONFIG",
+        "kind": 6,
+        "importPath": "plugins.uEmu.uEmu",
+        "description": "plugins.uEmu.uEmu",
+        "peekOfCode": "class UEMU_CONFIG:\n    IDAViewColor_PC     = 0x00B3CBFF\n    IDAViewColor_Reset  = 0xFFFFFFFF\n    UnicornPageSize     = 0x1000\n# === Helpers\nclass UEMU_HELPERS:\n    # Menu\n    MenuItem = collections.namedtuple(\"MenuItem\", [\"action\", \"handler\", \"title\", \"tooltip\", \"shortcut\", \"popup\"])\n    class IdaMenuActionHandler(action_handler_t):\n        def __init__(self, handler, action):",
+        "detail": "plugins.uEmu.uEmu",
+        "documentation": {}
+    },
+    {
+        "label": "UEMU_HELPERS",
+        "kind": 6,
+        "importPath": "plugins.uEmu.uEmu",
+        "description": "plugins.uEmu.uEmu",
+        "peekOfCode": "class UEMU_HELPERS:\n    # Menu\n    MenuItem = collections.namedtuple(\"MenuItem\", [\"action\", \"handler\", \"title\", \"tooltip\", \"shortcut\", \"popup\"])\n    class IdaMenuActionHandler(action_handler_t):\n        def __init__(self, handler, action):\n            action_handler_t.__init__(self)\n            self.action_handler = handler\n            self.action_type = action\n        def activate(self, ctx):\n            if ctx.form_type == BWN_DISASM:",
+        "detail": "plugins.uEmu.uEmu",
+        "documentation": {}
+    },
+    {
+        "label": "uEmuInitView",
+        "kind": 6,
+        "importPath": "plugins.uEmu.uEmu",
+        "description": "plugins.uEmu.uEmu",
+        "peekOfCode": "class uEmuInitView(object):\n    def __init__(self, owner):\n        super(uEmuInitView, self).__init__()\n        self.owner = owner\n# === uEmuCpuContextView\nclass uEmuCpuContextView(simplecustviewer_t):\n    def __init__(self, owner, extended):\n        super(uEmuCpuContextView, self).__init__()\n        self.hooks = None\n        self.owner = owner",
+        "detail": "plugins.uEmu.uEmu",
+        "documentation": {}
+    },
+    {
+        "label": "uEmuCpuContextView",
+        "kind": 6,
+        "importPath": "plugins.uEmu.uEmu",
+        "description": "plugins.uEmu.uEmu",
+        "peekOfCode": "class uEmuCpuContextView(simplecustviewer_t):\n    def __init__(self, owner, extended):\n        super(uEmuCpuContextView, self).__init__()\n        self.hooks = None\n        self.owner = owner\n        self.extended = extended\n        self.lastAddress = None\n        self.lastContext = {}\n        self.lastArch = None\n        self.columns = None",
+        "detail": "plugins.uEmu.uEmu",
+        "documentation": {}
+    },
+    {
+        "label": "uEmuMemoryRangeDialog",
+        "kind": 6,
+        "importPath": "plugins.uEmu.uEmu",
+        "description": "plugins.uEmu.uEmu",
+        "peekOfCode": "class uEmuMemoryRangeDialog(Form):\n    def __init__(self):\n        Form.__init__(self, r\"\"\"STARTITEM {id:mem_addr}\nBUTTON YES* Add\nBUTTON CANCEL Cancel\nShow Memory Range\nSpecify start address and size of new memory range.\n<##Address\\::{mem_addr}> <##Size\\::{mem_size}>\n<##Comment\\::{mem_cmnt}>\n\"\"\", {",
+        "detail": "plugins.uEmu.uEmu",
+        "documentation": {}
+    },
+    {
+        "label": "uEmuMemoryView",
+        "kind": 6,
+        "importPath": "plugins.uEmu.uEmu",
+        "description": "plugins.uEmu.uEmu",
+        "peekOfCode": "class uEmuMemoryView(simplecustviewer_t):\n    def __init__(self, owner, address, size):\n        super(uEmuMemoryView, self).__init__()\n        self.owner = owner\n        self.viewid = address\n        self.address = address\n        self.size = size\n        self.lastContent = []\n    def Create(self, title):\n        if not simplecustviewer_t.Create(self, title):",
+        "detail": "plugins.uEmu.uEmu",
+        "documentation": {}
+    },
+    {
+        "label": "uEmuStackView",
+        "kind": 6,
+        "importPath": "plugins.uEmu.uEmu",
+        "description": "plugins.uEmu.uEmu",
+        "peekOfCode": "class uEmuStackView(simplecustviewer_t):\n    stack_prelines = 12\n    stack_postlines = 52\n    def __init__(self, owner):\n        super(uEmuStackView, self).__init__()\n        self.owner = owner\n        arch = UEMU_HELPERS.get_arch()\n        _, self.uc_reg_sp = UEMU_HELPERS.get_stack_register(arch)\n    def Create(self, title):\n        if not simplecustviewer_t.Create(self, title):",
+        "detail": "plugins.uEmu.uEmu",
+        "documentation": {}
+    },
+    {
+        "label": "uEmuControlView",
+        "kind": 6,
+        "importPath": "plugins.uEmu.uEmu",
+        "description": "plugins.uEmu.uEmu",
+        "peekOfCode": "class uEmuControlView(PluginForm):\n    def __init__(self, owner):\n        self.owner = owner\n        PluginForm.__init__(self)\n    def OnCreate(self, form):\n        self.parent = self.FormToPyQtWidget(form)\n        self.PopulateForm()\n    def PopulateForm(self):\n        btnStart = QPushButton(\"Start\")\n        btnRun = QPushButton(\"Run\")",
+        "detail": "plugins.uEmu.uEmu",
+        "documentation": {}
+    },
+    {
+        "label": "uEmuMappeduMemoryView",
+        "kind": 6,
+        "importPath": "plugins.uEmu.uEmu",
+        "description": "plugins.uEmu.uEmu",
+        "peekOfCode": "class uEmuMappeduMemoryView(IDAAPI_Choose):\n    def __init__(self, owner, memory, flags=0, width=None, height=None, embedded=False):\n        IDAAPI_Choose.__init__(\n            self,\n            \"uEmu Mapped Memory\",\n            [ [\"Start\", 20], [\"End\", 20], [\"Permissions\", 10] ],\n            flags = flags,\n            width = width,\n            height = height,\n            embedded = embedded)",
+        "detail": "plugins.uEmu.uEmu",
+        "documentation": {}
+    },
+    {
+        "label": "uEmuSettingsDialog",
+        "kind": 6,
+        "importPath": "plugins.uEmu.uEmu",
+        "description": "plugins.uEmu.uEmu",
+        "peekOfCode": "class uEmuSettingsDialog(Form):\n    def __init__(self):\n        Form.__init__(self, r\"\"\"STARTITEM {id:chk_followpc}\nBUTTON YES* Save\nBUTTON CANCEL Cancel\nuEmu Settings\n<Follow PC:{chk_followpc}>\n<Convert to Code automatically:{chk_forcecode}>\n<Trace instructions:{chk_trace}>\n<Lazy mapping:{chk_lazymapping}>{emu_group}>",
+        "detail": "plugins.uEmu.uEmu",
+        "documentation": {}
+    },
+    {
+        "label": "uEmuRegisterValueDialog",
+        "kind": 6,
+        "importPath": "plugins.uEmu.uEmu",
+        "description": "plugins.uEmu.uEmu",
+        "peekOfCode": "class uEmuRegisterValueDialog(Form):\n    def __init__(self, regName):\n        Form.__init__(self, r\"\"\"STARTITEM {id:reg_val}\nBUTTON YES* Save\nBUTTON CANCEL Cancel\nRegister Value\n{reg_label}\n<##:{reg_val}>\n\"\"\", {\n        'reg_label': Form.StringLabel(\"Enter hex value for [ \" + regName + \" ]\"),",
+        "detail": "plugins.uEmu.uEmu",
+        "documentation": {}
+    },
+    {
+        "label": "uEmuRegisterValueLHDialog",
+        "kind": 6,
+        "importPath": "plugins.uEmu.uEmu",
+        "description": "plugins.uEmu.uEmu",
+        "peekOfCode": "class uEmuRegisterValueLHDialog(Form):\n    def __init__(self, regName):\n        Form.__init__(self, r\"\"\"STARTITEM {id:reg_valh}\nBUTTON YES* Save\nBUTTON CANCEL Cancel\nRegister Value\n{reg_label}\n<##High\\::{reg_valh}>\n<##Low\\: :{reg_vall}>\n\"\"\", {",
+        "detail": "plugins.uEmu.uEmu",
+        "documentation": {}
+    },
+    {
+        "label": "uEmuMapBinaryFileDialog",
+        "kind": 6,
+        "importPath": "plugins.uEmu.uEmu",
+        "description": "plugins.uEmu.uEmu",
+        "peekOfCode": "class uEmuMapBinaryFileDialog(Form):\n    def __init__(self, address):\n        Form.__init__(self, r\"\"\"STARTITEM {id:file_name}\nBUTTON YES* Map\nBUTTON CANCEL Cancel\nMap Binary File\n{form_change_cb}\n<#Select file to open#File\\::{file_name}>\n{note_label}\n<##Address\\:    :{mem_addr}>",
+        "detail": "plugins.uEmu.uEmu",
+        "documentation": {}
+    },
+    {
+        "label": "uEmuContextInitDialog",
+        "kind": 6,
+        "importPath": "plugins.uEmu.uEmu",
+        "description": "plugins.uEmu.uEmu",
+        "peekOfCode": "class uEmuContextInitDialog(IDAAPI_Choose):\n    def __init__(self, regs, flags=0, width=None, height=None, embedded=False):\n        IDAAPI_Choose.__init__(\n            self,\n            \"uEmu CPU Context Edit\",\n            [ [\"Register\", 10], [\"Value\", 30] ],\n            flags = flags,\n            width = width,\n            height = height,\n            embedded = embedded)",
+        "detail": "plugins.uEmu.uEmu",
+        "documentation": {}
+    },
+    {
+        "label": "uEmuUnicornEngine",
+        "kind": 6,
+        "importPath": "plugins.uEmu.uEmu",
+        "description": "plugins.uEmu.uEmu",
+        "peekOfCode": "class uEmuUnicornEngine(object):\n    mu = None\n    pc = BADADDR\n    emuActive       = False\n    emuRunning      = False\n    emuThread       = None\n    kStepCount_Run  = 0\n    emuStepCount    = 1\n    fix_context     = None\n    extended        = False",
+        "detail": "plugins.uEmu.uEmu",
+        "documentation": {}
+    },
+    {
+        "label": "uEmuExtensionHooks",
+        "kind": 6,
+        "importPath": "plugins.uEmu.uEmu",
+        "description": "plugins.uEmu.uEmu",
+        "peekOfCode": "class uEmuExtensionHooks:\n    init_context = None\n    trace_log = None\n    emu_step = None\nclass uEmuPlugin(plugin_t, UI_Hooks):\n    popup_menu_hook = None\n    flags = PLUGIN_HIDE\n    comment = \"\"\n    help = \"Tiny cute emulator\"\n    wanted_name = \"uEmu\"",
+        "detail": "plugins.uEmu.uEmu",
+        "documentation": {}
+    },
+    {
+        "label": "uEmuPlugin",
+        "kind": 6,
+        "importPath": "plugins.uEmu.uEmu",
+        "description": "plugins.uEmu.uEmu",
+        "peekOfCode": "class uEmuPlugin(plugin_t, UI_Hooks):\n    popup_menu_hook = None\n    flags = PLUGIN_HIDE\n    comment = \"\"\n    help = \"Tiny cute emulator\"\n    wanted_name = \"uEmu\"\n    plugin_name = \"uEmu\"\n    wanted_hotkey = \"\"\n    ext_hooks = None\n    # --- PLUGIN DATA",
+        "detail": "plugins.uEmu.uEmu",
+        "documentation": {}
+    },
+    {
+        "label": "uemu_log",
+        "kind": 2,
+        "importPath": "plugins.uEmu.uEmu",
+        "description": "plugins.uEmu.uEmu",
+        "peekOfCode": "def uemu_log(entry, name=\"uEmu\"):\n    msg(\"[\" + name + \"]: \" + entry + \"\\n\")\n# === uEmuInitView\nclass uEmuInitView(object):\n    def __init__(self, owner):\n        super(uEmuInitView, self).__init__()\n        self.owner = owner\n# === uEmuCpuContextView\nclass uEmuCpuContextView(simplecustviewer_t):\n    def __init__(self, owner, extended):",
+        "detail": "plugins.uEmu.uEmu",
+        "documentation": {}
+    },
+    {
+        "label": "PLUGIN_ENTRY",
+        "kind": 2,
+        "importPath": "plugins.uEmu.uEmu",
+        "description": "plugins.uEmu.uEmu",
+        "peekOfCode": "def PLUGIN_ENTRY():\n    return uEmuPlugin()\nif UEMU_USE_AS_SCRIPT:\n    if __name__ == '__main__':\n        uEmu = uEmuPlugin()\n        uEmu.init()\n        uEmu.run()",
+        "detail": "plugins.uEmu.uEmu",
         "documentation": {}
     },
     {
