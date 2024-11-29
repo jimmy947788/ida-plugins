@@ -10,3 +10,24 @@
 [submodule "plugins/d810"]
 	path = plugins/d810
 	url = https://gitlab.com/eshard/d810.git
+[submodule "plugins/bincat"]
+	path = plugins/bincat
+	url = https://github.com/airbus-seclab/bincat.git
+[submodule "plugins/IdaClu"]
+	path = plugins/IdaClu
+	url = https://github.com/harlamism/IdaClu.git
+[submodule "plugins/keypatch"]
+	path = plugins/keypatch
+	url = https://github.com/keystone-engine/keypatch.git
+[submodule "plugins/frinet"]
+	path = plugins/frinet
+	url = https://github.com/synacktiv/frinet.git
+[submodule "plugins/FunctionInliner"]
+	path = plugins/FunctionInliner
+	url = https://github.com/cellebrite-labs/FunctionInliner.git
+[submodule "plugins/mrspicky"]
+	path = plugins/mrspicky
+	url = https://github.com/patois/mrspicky.git
+[submodule "plugins/flare-ida"]
+	path = plugins/flare-ida
+	url = https://github.com/mandiant/flare-ida.git
