@@ -5,3 +5,8 @@
 [submodule "plugins/findcrypt-yara"]
 	path = plugins/findcrypt-yara
 	url = https://github.com/polymorf/findcrypt-yara.git
+
+
+[submodule "plugins/d810"]
+	path = plugins/d810
+	url = https://gitlab.com/eshard/d810.git

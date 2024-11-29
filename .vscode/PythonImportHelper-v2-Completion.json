@@ -4312,6 +4312,42 @@
         "documentation": {}
     },
     {
+        "label": "ida_diskio",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "ida_diskio",
+        "description": "ida_diskio",
+        "detail": "ida_diskio",
+        "documentation": {}
+    },
+    {
+        "label": "operator",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "operator",
+        "description": "operator",
+        "detail": "operator",
+        "documentation": {}
+    },
+    {
+        "label": "yara",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "yara",
+        "description": "yara",
+        "detail": "yara",
+        "documentation": {}
+    },
+    {
+        "label": "glob",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "glob",
+        "description": "glob",
+        "detail": "glob",
+        "documentation": {}
+    },
+    {
         "label": "messages",
         "importPath": "pyexpat.errors",
         "description": "pyexpat.errors",
@@ -4676,15 +4712,6 @@
         "importPath": "os.path",
         "description": "os.path",
         "detail": "os.path",
-        "documentation": {}
-    },
-    {
-        "label": "yara",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "yara",
-        "description": "yara",
-        "detail": "yara",
         "documentation": {}
     },
     {
@@ -5098,15 +5125,6 @@
         "documentation": {}
     },
     {
-        "label": "glob",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "glob",
-        "description": "glob",
-        "detail": "glob",
-        "documentation": {}
-    },
-    {
         "label": "idabincat.netnode",
         "kind": 6,
         "isExtraImport": true,
@@ -5379,15 +5397,6 @@
         "documentation": {}
     },
     {
-        "label": "ida_diskio",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "ida_diskio",
-        "description": "ida_diskio",
-        "detail": "ida_diskio",
-        "documentation": {}
-    },
-    {
         "label": "parsers",
         "importPath": "pybincat.tools",
         "description": "pybincat.tools",
@@ -5500,15 +5509,6 @@
         "description": "d810.log",
         "isExtraImport": true,
         "detail": "d810.log",
-        "documentation": {}
-    },
-    {
-        "label": "operator",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "operator",
-        "description": "operator",
-        "detail": "operator",
         "documentation": {}
     },
     {
@@ -11388,6 +11388,60 @@
         "documentation": {}
     },
     {
+        "label": "YaraSearchResultChooser",
+        "kind": 6,
+        "importPath": "plugins.findcrypt-yara.findcrypt3",
+        "description": "plugins.findcrypt-yara.findcrypt3",
+        "peekOfCode": "class YaraSearchResultChooser(idaapi.Choose):\n    def __init__(self, title, items, flags=0, width=None, height=None, embedded=False, modal=False):\n        idaapi.Choose.__init__(\n            self,\n            title,\n            [\n                [\"Address\", idaapi.Choose.CHCOL_HEX|10],\n                [\"Rules file\", idaapi.Choose.CHCOL_PLAIN|12],\n                [\"Name\", idaapi.Choose.CHCOL_PLAIN|25],\n                [\"String\", idaapi.Choose.CHCOL_PLAIN|25],",
+        "detail": "plugins.findcrypt-yara.findcrypt3",
+        "documentation": {}
+    },
+    {
+        "label": "Findcrypt_Plugin_t",
+        "kind": 6,
+        "importPath": "plugins.findcrypt-yara.findcrypt3",
+        "description": "plugins.findcrypt-yara.findcrypt3",
+        "peekOfCode": "class Findcrypt_Plugin_t(idaapi.plugin_t):\n    comment = \"Findcrypt plugin for IDA Pro (using yara framework)\"\n    help = \"todo\"\n    wanted_name = \"Findcrypt\"\n    wanted_hotkey = \"Ctrl-Alt-F\"\n    flags = idaapi.PLUGIN_KEEP\n    def init(self):\n        global p_initialized\n        # register popup menu handlers\n        try:",
+        "detail": "plugins.findcrypt-yara.findcrypt3",
+        "documentation": {}
+    },
+    {
+        "label": "PLUGIN_ENTRY",
+        "kind": 2,
+        "importPath": "plugins.findcrypt-yara.findcrypt3",
+        "description": "plugins.findcrypt-yara.findcrypt3",
+        "peekOfCode": "def PLUGIN_ENTRY():\n    return Findcrypt_Plugin_t()",
+        "detail": "plugins.findcrypt-yara.findcrypt3",
+        "documentation": {}
+    },
+    {
+        "label": "VERSION",
+        "kind": 5,
+        "importPath": "plugins.findcrypt-yara.findcrypt3",
+        "description": "plugins.findcrypt-yara.findcrypt3",
+        "peekOfCode": "VERSION = \"0.2\"\nYARARULES_CFGFILE = os.path.join(os.path.dirname(os.path.abspath(__file__)), \"findcrypt3.rules\")\ntry:\n    class Kp_Menu_Context(idaapi.action_handler_t):\n        def __init__(self):\n            idaapi.action_handler_t.__init__(self)\n        @classmethod\n        def get_name(self):\n            return self.__name__\n        @classmethod",
+        "detail": "plugins.findcrypt-yara.findcrypt3",
+        "documentation": {}
+    },
+    {
+        "label": "YARARULES_CFGFILE",
+        "kind": 5,
+        "importPath": "plugins.findcrypt-yara.findcrypt3",
+        "description": "plugins.findcrypt-yara.findcrypt3",
+        "peekOfCode": "YARARULES_CFGFILE = os.path.join(os.path.dirname(os.path.abspath(__file__)), \"findcrypt3.rules\")\ntry:\n    class Kp_Menu_Context(idaapi.action_handler_t):\n        def __init__(self):\n            idaapi.action_handler_t.__init__(self)\n        @classmethod\n        def get_name(self):\n            return self.__name__\n        @classmethod\n        def get_label(self):",
+        "detail": "plugins.findcrypt-yara.findcrypt3",
+        "documentation": {}
+    },
+    {
+        "label": "p_initialized",
+        "kind": 5,
+        "importPath": "plugins.findcrypt-yara.findcrypt3",
+        "description": "plugins.findcrypt-yara.findcrypt3",
+        "peekOfCode": "p_initialized = False\nclass YaraSearchResultChooser(idaapi.Choose):\n    def __init__(self, title, items, flags=0, width=None, height=None, embedded=False, modal=False):\n        idaapi.Choose.__init__(\n            self,\n            title,\n            [\n                [\"Address\", idaapi.Choose.CHCOL_HEX|10],\n                [\"Rules file\", idaapi.Choose.CHCOL_PLAIN|12],\n                [\"Name\", idaapi.Choose.CHCOL_PLAIN|25],",
+        "detail": "plugins.findcrypt-yara.findcrypt3",
+        "documentation": {}
+    },
+    {
         "label": "GepettoCLI",
         "kind": 6,
         "importPath": "plugins.gepetto.ida.cli",
@@ -13462,7 +13516,7 @@
         "kind": 6,
         "importPath": "plugins.findcrypt3",
         "description": "plugins.findcrypt3",
-        "peekOfCode": "class YaraSearchResultChooser(idaapi.Choose):\n    def __init__(self, title, items, flags=0, width=None, height=None, embedded=False, modal=False):\n        idaapi.Choose.__init__(\n            self,\n            title,\n            [\n                [\"Address\", idaapi.Choose.CHCOL_HEX|10],\n                [\"Function\", idaapi.Choose.CHCOL_PLAIN|10],\n                [\"Rules file\", idaapi.Choose.CHCOL_PLAIN|12],\n                [\"Name\", idaapi.Choose.CHCOL_PLAIN|25],",
+        "peekOfCode": "class YaraSearchResultChooser(idaapi.Choose):\n    def __init__(self, title, items, flags=0, width=None, height=None, embedded=False, modal=False):\n        idaapi.Choose.__init__(\n            self,\n            title,\n            [\n                [\"Address\", idaapi.Choose.CHCOL_HEX|10],\n                [\"Rules file\", idaapi.Choose.CHCOL_PLAIN|12],\n                [\"Name\", idaapi.Choose.CHCOL_PLAIN|25],\n                [\"String\", idaapi.Choose.CHCOL_PLAIN|25],",
         "detail": "plugins.findcrypt3",
         "documentation": {}
     },
@@ -13480,7 +13534,7 @@
         "kind": 2,
         "importPath": "plugins.findcrypt3",
         "description": "plugins.findcrypt3",
-        "peekOfCode": "def PLUGIN_ENTRY():\n    return Findcrypt_Plugin_t()\n_load_method = None\nif __name__ == \"__main__\":\n    # loaded directly\n    _load_method = 'direct'\nelif __name__.startswith(\"__plugins__\"):\n    _load_method = 'plugin'\n    # loaded as a plugin\nelif __name__ == \"findcrypt3\":",
+        "peekOfCode": "def PLUGIN_ENTRY():\n    return Findcrypt_Plugin_t()",
         "detail": "plugins.findcrypt3",
         "documentation": {}
     },
@@ -13507,16 +13561,7 @@
         "kind": 5,
         "importPath": "plugins.findcrypt3",
         "description": "plugins.findcrypt3",
-        "peekOfCode": "p_initialized = False\nclass YaraSearchResultChooser(idaapi.Choose):\n    def __init__(self, title, items, flags=0, width=None, height=None, embedded=False, modal=False):\n        idaapi.Choose.__init__(\n            self,\n            title,\n            [\n                [\"Address\", idaapi.Choose.CHCOL_HEX|10],\n                [\"Function\", idaapi.Choose.CHCOL_PLAIN|10],\n                [\"Rules file\", idaapi.Choose.CHCOL_PLAIN|12],",
-        "detail": "plugins.findcrypt3",
-        "documentation": {}
-    },
-    {
-        "label": "_load_method",
-        "kind": 5,
-        "importPath": "plugins.findcrypt3",
-        "description": "plugins.findcrypt3",
-        "peekOfCode": "_load_method = None\nif __name__ == \"__main__\":\n    # loaded directly\n    _load_method = 'direct'\nelif __name__.startswith(\"__plugins__\"):\n    _load_method = 'plugin'\n    # loaded as a plugin\nelif __name__ == \"findcrypt3\":\n    _load_method = 'module'\nelse:",
+        "peekOfCode": "p_initialized = False\nclass YaraSearchResultChooser(idaapi.Choose):\n    def __init__(self, title, items, flags=0, width=None, height=None, embedded=False, modal=False):\n        idaapi.Choose.__init__(\n            self,\n            title,\n            [\n                [\"Address\", idaapi.Choose.CHCOL_HEX|10],\n                [\"Rules file\", idaapi.Choose.CHCOL_PLAIN|12],\n                [\"Name\", idaapi.Choose.CHCOL_PLAIN|25],",
         "detail": "plugins.findcrypt3",
         "documentation": {}
     },
