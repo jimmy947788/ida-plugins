@@ -131,3 +131,6 @@
 [submodule "plugins/HexForge"]
 	path = plugins/HexForge
 	url = https://github.com/elastic/HexForge.git
+[submodule "plugins/IDALibcAutoFlags"]
+	path = plugins/IDALibcAutoFlags
+	url = https://github.com/0xMirasio/IDALibcAutoFlags.git
