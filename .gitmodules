@@ -80,9 +80,9 @@
 	path = plugins/abyss
 	url = https://github.com/patois/abyss.git
 
-[submodule "scripts/Reverse-Engineering-Arsenal"]
-	path = scripts/Reverse-Engineering-Arsenal
-	url = https://github.com/vallejocc/Reverse-Engineering-Arsenal.git
+# [submodule "scripts/Reverse-Engineering-Arsenal"]
+# 	path = scripts/Reverse-Engineering-Arsenal
+# 	url = https://github.com/vallejocc/Reverse-Engineering-Arsenal.git
 [submodule "scripts/personal_script"]
 	path = scripts/personal_script
 	url = https://github.com/lich4/personal_script.git
