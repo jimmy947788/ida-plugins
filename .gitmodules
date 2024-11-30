@@ -13,6 +13,7 @@
 [submodule "plugins/bincat"]
 	path = plugins/bincat
 	url = https://github.com/airbus-seclab/bincat.git
+	
 [submodule "plugins/IdaClu"]
 	path = plugins/IdaClu
 	url = https://github.com/harlamism/IdaClu.git
