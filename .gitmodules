@@ -134,3 +134,6 @@
 [submodule "plugins/IDALibcAutoFlags"]
 	path = plugins/IDALibcAutoFlags
 	url = https://github.com/0xMirasio/IDALibcAutoFlags.git
+[submodule "plugins/stalker_trace_so"]
+	path = plugins/stalker_trace_so
+	url = https://github.com/oacia/stalker_trace_so.git

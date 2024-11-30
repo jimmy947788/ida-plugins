@@ -17,3 +17,10 @@ Collection of IDA Python plugins/scripts/modules.
     ```bash
     git submodule update --init --recursive
     ```
+
+3. add submodules
+
+    ```bash
+    git submodule add <submodule-url> <submodule-path>
+    ```
+    
