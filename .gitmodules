@@ -141,3 +141,15 @@
 [submodule "plugins/auto-enum"]
 	path = plugins/auto-enum
 	url = https://github.com/junron/auto-enum.git
+[submodule "plugins/trace_natives"]
+	path = plugins/trace_natives
+	url = https://github.com/Pr0214/trace_natives.git
+[submodule "plugins/OpenLumina"]
+	path = plugins/OpenLumina
+	url = https://github.com/tomrus88/OpenLumina.git
+[submodule "plugins/MyIdaFrida"]
+	path = plugins/MyIdaFrida
+	url = https://github.com/AnxiangLemon/MyIdaFrida.git
+[submodule "plugins/auto_re"]
+	path = plugins/auto_re
+	url = https://github.com/a1ext/auto_re.git

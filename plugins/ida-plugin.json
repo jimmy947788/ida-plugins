@@ -1,8 +1,0 @@
-{
-    "IDAMetadataDescriptorVersion": 1,
-    "plugin" :
-    {
-      "name" : "aidapal",
-      "entryPoint" : "idapal.py"
-    }
-  }
