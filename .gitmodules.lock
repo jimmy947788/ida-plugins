@@ -137,3 +137,5 @@
 [submodule "plugins/stalker_trace_so"]
 	path = plugins/stalker_trace_so
 	url = https://github.com/oacia/stalker_trace_so.git
+[submodule "plugins/auto-enum"]
+	path = plugins/auto-enum
