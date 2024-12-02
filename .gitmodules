@@ -145,7 +145,6 @@
 [submodule "plugins/auto_re"]
 	path = plugins/auto_re
 	url = https://github.com/a1ext/auto_re.git
-<<<<<<< HEAD
 [submodule "plugins/SysNR-FuncFinder"]
 	path = plugins/SysNR-FuncFinder
 	url = https://github.com/WPeace-HcH/SysNR-FuncFinder.git
@@ -158,16 +157,3 @@
 [submodule "plugins/jni_helper"]
 	path = plugins/jni_helper
 	url = https://github.com/evilpan/jni_helper.git
-=======
-
-# [submodule "scripts/Reverse-Engineering-Arsenal"]
-# 	path = scripts/Reverse-Engineering-Arsenal
-# 	url = https://github.com/vallejocc/Reverse-Engineering-Arsenal.git
-
-# [submodule "scripts/personal_script"]
-# 	path = scripts/personal_script
-# 	url = https://github.com/lich4/personal_script.git
-# [submodule "scripts/ida_haru"]
-# 	path = scripts/ida_haru
-# 	url = https://github.com/TakahiroHaruyama/ida_haru.git
->>>>>>> 82e476cf537653b9248e7ddcfc8b54d956d7ec6a
