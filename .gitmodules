@@ -153,3 +153,15 @@
 [submodule "plugins/auto_re"]
 	path = plugins/auto_re
 	url = https://github.com/a1ext/auto_re.git
+[submodule "plugins/SysNR-FuncFinder"]
+	path = plugins/SysNR-FuncFinder
+	url = https://github.com/WPeace-HcH/SysNR-FuncFinder.git
+[submodule "plugins/AutoResolv"]
+	path = plugins/AutoResolv
+	url = https://github.com/0xMirasio/AutoResolv.git
+[submodule "plugins/protobuf-finder"]
+	path = plugins/protobuf-finder
+	url = https://github.com/Accenture/protobuf-finder.git
+[submodule "plugins/jni_helper"]
+	path = plugins/jni_helper
+	url = https://github.com/evilpan/jni_helper.git
