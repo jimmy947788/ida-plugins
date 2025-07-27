@@ -20,9 +20,7 @@
 [submodule "plugins/frinet"]
 	path = plugins/frinet
 	url = https://github.com/synacktiv/frinet.git
-[submodule "plugins/FunctionInliner"]
-	path = plugins/FunctionInliner
-	url = https://github.com/cellebrite-labs/FunctionInliner.git
+
 [submodule "plugins/mrspicky"]
 	path = plugins/mrspicky
 	url = https://github.com/patois/mrspicky.git
@@ -44,15 +42,8 @@
 [submodule "plugins/dsync"]
 	path = plugins/dsync
 	url = https://github.com/patois/dsync.git
-[submodule "plugins/tenet"]
-	path = plugins/tenet
-	url = https://github.com/gaasedelen/tenet.git
-[submodule "plugins/patching"]
-	path = plugins/patching
-	url = https://github.com/gaasedelen/patching.git
-[submodule "plugins/HexraysToolbox"]
-	path = plugins/HexraysToolbox
-	url = https://github.com/patois/HexraysToolbox.git
+
+
 [submodule "plugins/HRDevHelper"]
 	path = plugins/HRDevHelper
 	url = https://github.com/patois/HRDevHelper.git
@@ -65,18 +56,13 @@
 [submodule "modules/hexrays_scripts"]
 	path = modules/hexrays_scripts
 	url = https://github.com/patois/hexrays_scripts.git
-[submodule "plugins/phrank"]
-	path = plugins/phrank
-	url = https://github.com/Mizari/phrank.git
-[submodule "plugins/herast"]
-	path = plugins/herast
-	url = https://github.com/Mizari/herast.git
+
+
 [submodule "plugins/XrefsExt"]
 	path = plugins/XrefsExt
 	url = https://github.com/zengfr/XrefsExt.git
-[submodule "plugins/abyss"]
-	path = plugins/abyss
-	url = https://github.com/patois/abyss.git
+
+
 
 [submodule "plugins/flare-floss"]
 	path = plugins/flare-floss
@@ -90,15 +76,11 @@
 [submodule "plugins/ida_ifl"]
 	path = plugins/ida_ifl
 	url = https://github.com/hasherezade/ida_ifl.git
-[submodule "plugins/idamagicstrings"]
-	path = plugins/idamagicstrings
-	url = https://github.com/joxeankoret/idamagicstrings.git
+
 [submodule "plugins/deREferencing"]
 	path = plugins/deREferencing
 	url = https://github.com/danigargu/deREferencing.git
-[submodule "plugins/classinformer"]
-	path = plugins/classinformer
-	url = https://github.com/herosi/classinformer.git
+
 [submodule "plugins/FindFunc"]
 	path = plugins/FindFunc
 	url = https://github.com/FelixBer/FindFunc.git
@@ -135,15 +117,8 @@
 [submodule "plugins/MyIdaFrida"]
 	path = plugins/MyIdaFrida
 	url = https://github.com/AnxiangLemon/MyIdaFrida.git
-[submodule "plugins/auto_re"]
-	path = plugins/auto_re
-	url = https://github.com/a1ext/auto_re.git
-[submodule "plugins/SysNR-FuncFinder"]
-	path = plugins/SysNR-FuncFinder
-	url = https://github.com/WPeace-HcH/SysNR-FuncFinder.git
-[submodule "plugins/AutoResolv"]
-	path = plugins/AutoResolv
-	url = https://github.com/0xMirasio/AutoResolv.git
+
+
 [submodule "plugins/protobuf-finder"]
 	path = plugins/protobuf-finder
 	url = https://github.com/Accenture/protobuf-finder.git
@@ -202,10 +177,7 @@
 [submodule "plugins/LazyCross"]
 	path = plugins/LazyCross
 	url = https://github.com/L4ys/LazyCross.git
-# https://github.com/illera88/Ponce
-[submodule "plugins/Ponce"]
-	path = plugins/Ponce
-	url = https://github.com/illera88/Ponce.git
+
 
 	# https://github.com/harlamism/IdaClu
 [submodule "plugins/IdaClu"]
@@ -275,7 +247,7 @@
 # https://github.com/a1ext/labeless
 [submodule "plugins/labeless"]
 	path = plugins/labeless
-	url = https://github.com/a1ext/labeless.git	
+	url = https://github.com/a1ext/labeless.git
 
 # https://github.com/kweatherman/ida_missinglink
 [submodule "plugins/ida_missinglink"]
@@ -296,7 +268,7 @@
 # https://github.com/TakahiroHaruyama/ida_haru
 [submodule "plugins/ida_haru"]
 	path = plugins/ida_haru
-	url = https://github.com/TakahiroHaruyama/ida_haru.git	
+	url = https://github.com/TakahiroHaruyama/ida_haru.git
 
 # https://github.com/Pycatchown/ClassMaker
 [submodule "plugins/ClassMaker"]
@@ -306,7 +278,7 @@
 # https://github.com/Skwteinopteros/ida-venv
 [submodule "plugins/ida-venv"]
 	path = plugins/ida-venv
-	url = https://github.com/Skwteinopteros/ida-venv.git	
+	url = https://github.com/Skwteinopteros/ida-venv.git
 
 # https://github.com/NoneShell/IDAComments
 [submodule "plugins/IDAComments"]
@@ -317,3 +289,123 @@
 [submodule "plugins/x64dbgida"]
 	path = plugins/x64dbgida
 	url = https://github.com/x64dbg/x64dbgida.git
+
+# https://github.com/Lil-Ran/build-bindiff-for-ida-9
+[submodule "plugins/build-bindiff-for-ida-9"]
+	path = plugins/build-bindiff-for-ida-9
+	url = https://github.com/Lil-Ran/build-bindiff-for-ida-9.git
+
+# https://github.com/zengfr/ida-pro-idb-database
+[submodule "plugins/ida-pro-idb-database"]
+	path = plugins/ida-pro-idb-database
+	url = https://github.com/zengfr/ida-pro-idb-database.git
+
+#	https://github.com/zengfr/HexRaysCodeXplorer_plugin_for_ida_pro
+[submodule "plugins/HexRaysCodeXplorer_plugin_for_ida_pro"]
+	path = plugins/HexRaysCodeXplorer_plugin_for_ida_pro
+	url = https://github.com/zengfr/HexRaysCodeXplorer_plugin_for_ida_pro.git
+
+# https://github.com/nlitsme/pyidbutil
+[submodule "plugins/pyidbutil"]
+	path = plugins/pyidbutil
+	url = https://github.com/nlitsme/pyidbutil.git
+
+# https://github.com/junron/ida2py
+[submodule "plugins/ida2py"]
+	path = plugins/ida2py
+	url = https://github.com/junron/ida2py.git
+
+# https://github.com/eset/ipyida
+[submodule "plugins/ipyida"]
+	path = plugins/ipyida
+	url = https://github.com/eset/ipyida.git
+
+# https://github.com/mandiant/flare-vm
+[submodule "plugins/flare-vm"]
+	path = plugins/flare-vm
+	url = https://github.com/mandiant/flare-vm.git
+
+# https://github.com/CrackerCat/fentapatch
+[submodule "plugins/fentapatch"]
+	path = plugins/fentapatch
+	url = https://github.com/CrackerCat/fentapatch.git
+
+#https://github.com/alexander-pick/ida-pro-function-hunter
+[submodule "plugins/ida-pro-function-hunter"]
+	path = plugins/ida-pro-function-hunter
+	url = https://github.com/alexander-pick/ida-pro-function-hunter.git
+
+# https://github.com/islipnot/AutoStruct
+[submodule "plugins/AutoStruct"]
+	path = plugins/AutoStruct
+	url = https://github.com/islipnot/AutoStruct.git
+
+
+
+
+# https://github.com/doronz88/ida-scripts
+[submodule "scripts/ida-scripts"]
+	path = scripts/ida-scripts
+	url = https://github.com/doronz88/ida-scripts.git
+
+# https://github.com/ZjW1nd/Better-printk-IDA9
+[submodule "plugins/Better-printk-IDA9"]
+	path = plugins/Better-printk-IDA9
+	url = https://github.com/ZjW1nd/Better-printk-IDA9.git
+
+# https://github.com/AzzOnFire/emuit
+[submodule "plugins/emuit"]
+	path = plugins/emuit
+	url = https://github.com/AzzOnFire/emuit.git
+
+# https://github.com/stuxnet147/IDA-Assistant
+[submodule "plugins/IDA-Assistant"]
+	path = plugins/IDA-Assistant
+	url = https://github.com/stuxnet147/IDA-Assistant.git
+
+# https://github.com/reveny/Android-JNI-Helper
+[submodule "plugins/Android-JNI-Helper"]
+	path = plugins/Android-JNI-Helper
+	url = https://github.com/reveny/Android-JNI-Helper.git
+
+# https://github.com/REDasmOrg/REDasm
+[submodule "plugins/REDasm"]
+	path = plugins/REDasm
+	url = https://github.com/REDasmOrg/REDasm.git
+
+
+# https://github.com/reversinglabs/reversinglabs-yara-rules
+[submodule "plugins/reversinglabs-yara-rules"]
+	path = plugins/reversinglabs-yara-rules
+	url = https://github.com/reversinglabs/reversinglabs-yara-rules.git
+
+# https://github.com/binsync/binsync
+
+[submodule "plugins/binsync"]
+	path = plugins/binsync
+	url = https://github.com/binsync/binsync.git
+
+# https://github.com/google/binexport
+[submodule "plugins/binexport"]
+	path = plugins/binexport
+	url = https://github.com/google/binexport.git
+
+# https://github.com/doronz88/fa
+[submodule "plugins/fa"]
+	path = plugins/fa
+	url = https://github.com/doronz88/fa.git
+
+# https://github.com/milankovo/hexinlay/tree/main
+[submodule "plugins/hexinlay"]
+	path = plugins/hexinlay
+	url = https://github.com/milankovo/hexinlay.git
+
+# https://github.com/0xdea/augur
+[submodule "plugins/augur"]
+	path = plugins/augur
+	url = https://github.com/0xdea/augur.git
+
+# https://github.com/jiutian666/xdefla
+[submodule "plugins/xdefla"]
+	path = plugins/xdefla
+	url = https://github.com/jiutian666/xdefla.git
