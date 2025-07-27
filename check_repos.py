@@ -4,12 +4,18 @@
 """
 
 import re
-import requests
 import time
-from datetime import datetime
-from typing import List, Dict, Tuple
-import sys
 import json
+import sys
+import subprocess
+from datetime import datetime
+from typing import List, Dict, Tuple, Optional
+try:
+    import urllib.request
+    import urllib.error
+    HAS_URLLIB = True
+except ImportError:
+    HAS_URLLIB = False
 
 def parse_gitmodules(file_path: str) -> List[Dict[str, str]]:
     """解析 .gitmodules 文件，提取 submodule 資訊"""
@@ -50,48 +56,232 @@ def extract_github_info(url: str) -> Tuple[str, str]:
     
     return None, None
 
-def get_repo_info(owner: str, repo: str, token: str = None) -> Dict:
-    """獲取 GitHub 專案資訊"""
-    url = f"https://api.github.com/repos/{owner}/{repo}"
+def get_repo_info_urllib_from_url(github_url: str, token: str = None) -> Dict:
+    """直接使用 .gitmodules 中的 GitHub URL 獲取專案資訊"""
+    # 從 GitHub URL 提取 owner 和 repo
+    owner, repo = extract_github_info(github_url)
+    if not owner or not repo:
+        return {'status': 'error', 'error': '無法解析 GitHub URL'}
     
-    headers = {
-        'Accept': 'application/vnd.github.v3+json',
-        'User-Agent': 'ida-plugins-checker'
-    }
-    
-    if token:
-        headers['Authorization'] = f'token {token}'
+    # 構建 API URL
+    api_url = f"https://api.github.com/repos/{owner}/{repo}"
     
     try:
-        response = requests.get(url, headers=headers, timeout=15)
+        # 創建請求
+        req = urllib.request.Request(api_url)
+        req.add_header('Accept', 'application/vnd.github.v3+json')
+        req.add_header('User-Agent', 'ida-plugins-checker')
         
-        if response.status_code == 200:
-            data = response.json()
-            return {
-                'stars': data.get('stargazers_count', 0),
-                'last_updated': data.get('updated_at', ''),
-                'description': data.get('description', ''),
-                'language': data.get('language', ''),
-                'archived': data.get('archived', False),
-                'fork': data.get('fork', False),
-                'status': 'success'
-            }
-        elif response.status_code == 404:
+        if token:
+            req.add_header('Authorization', f'token {token}')
+        
+        # 執行請求
+        with urllib.request.urlopen(req, timeout=15) as response:
+            if response.status == 200:
+                data = json.loads(response.read().decode('utf-8'))
+                return {
+                    'owner': owner,
+                    'repo': repo,
+                    'github_url': github_url,
+                    'stars': data.get('stargazers_count', 0),
+                    'last_updated': data.get('updated_at', ''),
+                    'description': data.get('description', ''),
+                    'language': data.get('language', ''),
+                    'archived': data.get('archived', False),
+                    'fork': data.get('fork', False),
+                    'status': 'success'
+                }
+            else:
+                return {'status': 'error', 'error': f'HTTP {response.status}'}
+                
+    except urllib.error.HTTPError as e:
+        if e.code == 404:
             return {'status': 'not_found', 'error': '專案不存在或已刪除'}
-        elif response.status_code == 403:
-            # 檢查是否是速率限制
-            if 'X-RateLimit-Remaining' in response.headers:
-                remaining = response.headers.get('X-RateLimit-Remaining', '0')
-                reset_time = response.headers.get('X-RateLimit-Reset', '0')
+        elif e.code == 403:
+            # 檢查速率限制
+            remaining = e.headers.get('X-RateLimit-Remaining', '0')
+            reset_time = e.headers.get('X-RateLimit-Reset', '0')
+            if remaining and reset_time:
                 formatted_reset = format_reset_time(reset_time)
                 return {'status': 'rate_limited', 'error': f'API 限制，剩餘: {remaining} 次，重置: {formatted_reset}'}
             else:
                 return {'status': 'rate_limited', 'error': 'API 限制，請設定 GitHub token'}
         else:
-            return {'status': 'error', 'error': f'HTTP {response.status_code}'}
-            
-    except requests.exceptions.RequestException as e:
+            return {'status': 'error', 'error': f'HTTP {e.code}'}
+    except Exception as e:
         return {'status': 'error', 'error': str(e)}
+
+def get_repo_info_urllib(owner: str, repo: str, token: str = None) -> Dict:
+    """使用 urllib 獲取 GitHub 專案資訊"""
+    api_url = f"https://api.github.com/repos/{owner}/{repo}"
+    
+    try:
+        # 創建請求
+        req = urllib.request.Request(api_url)
+        req.add_header('Accept', 'application/vnd.github.v3+json')
+        req.add_header('User-Agent', 'ida-plugins-checker')
+        
+        if token:
+            req.add_header('Authorization', f'token {token}')
+        
+        # 執行請求
+        with urllib.request.urlopen(req, timeout=15) as response:
+            if response.status == 200:
+                data = json.loads(response.read().decode('utf-8'))
+                return {
+                    'stars': data.get('stargazers_count', 0),
+                    'last_updated': data.get('updated_at', ''),
+                    'description': data.get('description', ''),
+                    'language': data.get('language', ''),
+                    'archived': data.get('archived', False),
+                    'fork': data.get('fork', False),
+                    'status': 'success'
+                }
+            else:
+                return {'status': 'error', 'error': f'HTTP {response.status}'}
+                
+    except urllib.error.HTTPError as e:
+        if e.code == 404:
+            return {'status': 'not_found', 'error': '專案不存在或已刪除'}
+        elif e.code == 403:
+            # 檢查速率限制
+            remaining = e.headers.get('X-RateLimit-Remaining', '0')
+            reset_time = e.headers.get('X-RateLimit-Reset', '0')
+            if remaining and reset_time:
+                formatted_reset = format_reset_time(reset_time)
+                return {'status': 'rate_limited', 'error': f'API 限制，剩餘: {remaining} 次，重置: {formatted_reset}'}
+            else:
+                return {'status': 'rate_limited', 'error': 'API 限制，請設定 GitHub token'}
+        else:
+            return {'status': 'error', 'error': f'HTTP {e.code}'}
+    except Exception as e:
+        return {'status': 'error', 'error': str(e)}
+
+def get_repo_info_wget(owner: str, repo: str, token: str = None) -> Dict:
+    """使用 wget 獲取 GitHub 專案資訊"""
+    url = f"https://api.github.com/repos/{owner}/{repo}"
+    
+    try:
+        # 構建 wget 命令
+        cmd = [
+            'wget', '-q', '-O', '-', '--timeout=15',
+            '--header=Accept: application/vnd.github.v3+json',
+            '--header=User-Agent: ida-plugins-checker'
+        ]
+        
+        if token:
+            cmd.append(f'--header=Authorization: token {token}')
+        
+        cmd.append(url)
+        
+        # 執行 wget
+        result = subprocess.run(cmd, capture_output=True, text=True, timeout=20)
+        
+        if result.returncode == 0:
+            try:
+                data = json.loads(result.stdout)
+                return {
+                    'stars': data.get('stargazers_count', 0),
+                    'last_updated': data.get('updated_at', ''),
+                    'description': data.get('description', ''),
+                    'language': data.get('language', ''),
+                    'archived': data.get('archived', False),
+                    'fork': data.get('fork', False),
+                    'status': 'success'
+                }
+            except json.JSONDecodeError:
+                return {'status': 'error', 'error': '無法解析 JSON 回應'}
+        elif result.returncode == 8:  # wget HTTP error
+            # 檢查錯誤輸出來判斷狀態碼
+            stderr = result.stderr.lower()
+            if '404' in stderr:
+                return {'status': 'not_found', 'error': '專案不存在或已刪除'}
+            elif '403' in stderr:
+                return {'status': 'rate_limited', 'error': 'API 限制，請設定 GitHub token'}
+            else:
+                return {'status': 'error', 'error': f'wget 錯誤: {result.stderr}'}
+        else:
+            return {'status': 'error', 'error': f'wget 失敗: {result.stderr}'}
+            
+    except subprocess.TimeoutExpired:
+        return {'status': 'error', 'error': '請求超時'}
+    except Exception as e:
+        return {'status': 'error', 'error': str(e)}
+
+def get_repo_info_curl(owner: str, repo: str, token: str = None) -> Dict:
+    """使用 curl 獲取 GitHub 專案資訊"""
+    url = f"https://api.github.com/repos/{owner}/{repo}"
+    
+    try:
+        # 構建 curl 命令
+        cmd = [
+            'curl', '-s', '--max-time', '15',
+            '-H', 'Accept: application/vnd.github.v3+json',
+            '-H', 'User-Agent: ida-plugins-checker'
+        ]
+        
+        if token:
+            cmd.extend(['-H', f'Authorization: token {token}'])
+        
+        cmd.append(url)
+        
+        # 執行 curl
+        result = subprocess.run(cmd, capture_output=True, text=True, timeout=20)
+        
+        if result.returncode == 0:
+            try:
+                data = json.loads(result.stdout)
+                
+                # 檢查是否是錯誤回應
+                if 'message' in data:
+                    if 'Not Found' in data['message']:
+                        return {'status': 'not_found', 'error': '專案不存在或已刪除'}
+                    elif 'API rate limit exceeded' in data['message']:
+                        return {'status': 'rate_limited', 'error': 'API 限制，請設定 GitHub token'}
+                    else:
+                        return {'status': 'error', 'error': data['message']}
+                
+                return {
+                    'stars': data.get('stargazers_count', 0),
+                    'last_updated': data.get('updated_at', ''),
+                    'description': data.get('description', ''),
+                    'language': data.get('language', ''),
+                    'archived': data.get('archived', False),
+                    'fork': data.get('fork', False),
+                    'status': 'success'
+                }
+            except json.JSONDecodeError:
+                return {'status': 'error', 'error': '無法解析 JSON 回應'}
+        else:
+            return {'status': 'error', 'error': f'curl 失敗: {result.stderr}'}
+            
+    except subprocess.TimeoutExpired:
+        return {'status': 'error', 'error': '請求超時'}
+    except Exception as e:
+        return {'status': 'error', 'error': str(e)}
+
+def get_repo_info(owner: str, repo: str, token: str = None) -> Dict:
+    """獲取 GitHub 專案資訊 - 自動選擇可用的方法"""
+    
+    # 優先順序: urllib > curl > wget
+    if HAS_URLLIB:
+        return get_repo_info_urllib(owner, repo, token)
+    
+    # 檢查 curl 是否可用
+    try:
+        subprocess.run(['curl', '--version'], capture_output=True, check=True)
+        return get_repo_info_curl(owner, repo, token)
+    except (subprocess.CalledProcessError, FileNotFoundError):
+        pass
+    
+    # 檢查 wget 是否可用
+    try:
+        subprocess.run(['wget', '--version'], capture_output=True, check=True)
+        return get_repo_info_wget(owner, repo, token)
+    except (subprocess.CalledProcessError, FileNotFoundError):
+        pass
+    
+    return {'status': 'error', 'error': '沒有可用的 HTTP 客戶端 (urllib, curl, wget)'}
 
 def format_date(date_str: str) -> str:
     """格式化日期字串"""
@@ -124,6 +314,23 @@ def main():
     print("🔍 檢查 .gitmodules 中的 GitHub 專案...")
     print("=" * 80)
     
+    # 顯示使用的 HTTP 方法
+    if HAS_URLLIB:
+        http_method = "urllib (Python 內建)"
+    else:
+        try:
+            subprocess.run(['curl', '--version'], capture_output=True, check=True)
+            http_method = "curl"
+        except:
+            try:
+                subprocess.run(['wget', '--version'], capture_output=True, check=True)
+                http_method = "wget"
+            except:
+                print("❌ 沒有可用的 HTTP 客戶端 (urllib, curl, wget)")
+                return
+    
+    print(f"🌐 HTTP 方法: {http_method}")
+    
     # 解析 .gitmodules
     try:
         submodules = parse_gitmodules('.gitmodules')
@@ -142,7 +349,7 @@ def main():
     for sub in submodules:
         owner, repo = extract_github_info(sub['url'])
         if owner and repo:
-            github_repos.append((sub, owner, repo))
+            github_repos.append(sub)  # 直接使用 submodule 資料
         else:
             results.append({
                 'name': sub['name'],
@@ -158,17 +365,18 @@ def main():
     print()
     
     # 獲取每個 GitHub 專案的資訊
-    for i, (sub, owner, repo) in enumerate(github_repos):
+    for i, sub in enumerate(github_repos):
+        # 從 URL 提取 owner/repo 用於顯示
+        owner, repo = extract_github_info(sub['url'])
         print(f"[{i+1}/{len(github_repos)}] 檢查 {owner}/{repo}...", end=' ')
         
-        info = get_repo_info(owner, repo, github_token)
+        # 直接使用 URL 獲取資訊
+        info = get_repo_info_urllib_from_url(sub['url'], github_token)
         
         result = {
             'name': sub['name'],
             'path': sub['path'],
             'url': sub['url'],
-            'owner': owner,
-            'repo': repo,
             **info
         }
         
@@ -181,7 +389,7 @@ def main():
         
         # 避免觸發 GitHub API 限制
         if i < len(github_repos) - 1:
-            time.sleep(2.0)  # 增加到 2 秒間隔
+            time.sleep(5.0)  # 增加到 2 秒間隔
     
     print()
     print("=" * 80)
