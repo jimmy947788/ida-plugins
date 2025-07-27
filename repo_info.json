@@ -1,0 +1,729 @@
+[
+  {
+    "name": "plugins/d810",
+    "path": "plugins/d810",
+    "url": "https://gitlab.com/eshard/d810.git",
+    "status": "not_github",
+    "error": "非 GitHub 專案"
+  },
+  {
+    "name": "plugins/uEmu",
+    "path": "plugins/uEmu",
+    "url": "https://github.com/alexhude/uEmu.git",
+    "owner": "alexhude",
+    "repo": "uEmu",
+    "status": "rate_limited",
+    "error": "API 限制，請設定 GitHub token"
+  },
+  {
+    "name": "plugins/findcrypt-yara",
+    "path": "plugins/findcrypt-yara",
+    "url": "https://github.com/polymorf/findcrypt-yara.git",
+    "owner": "polymorf",
+    "repo": "findcrypt-yara",
+    "status": "rate_limited",
+    "error": "API 限制，請設定 GitHub token"
+  },
+  {
+    "name": "plugins/bincat",
+    "path": "plugins/bincat",
+    "url": "https://github.com/airbus-seclab/bincat.git",
+    "owner": "airbus-seclab",
+    "repo": "bincat",
+    "status": "rate_limited",
+    "error": "API 限制，請設定 GitHub token"
+  },
+  {
+    "name": "plugins/keypatch",
+    "path": "plugins/keypatch",
+    "url": "https://github.com/keystone-engine/keypatch.git",
+    "owner": "keystone-engine",
+    "repo": "keypatch",
+    "status": "rate_limited",
+    "error": "API 限制，請設定 GitHub token"
+  },
+  {
+    "name": "plugins/frinet",
+    "path": "plugins/frinet",
+    "url": "https://github.com/synacktiv/frinet.git",
+    "owner": "synacktiv",
+    "repo": "frinet",
+    "status": "rate_limited",
+    "error": "API 限制，請設定 GitHub token"
+  },
+  {
+    "name": "plugins/FunctionInliner",
+    "path": "plugins/FunctionInliner",
+    "url": "https://github.com/cellebrite-labs/FunctionInliner.git",
+    "owner": "cellebrite-labs",
+    "repo": "FunctionInliner",
+    "status": "rate_limited",
+    "error": "API 限制，請設定 GitHub token"
+  },
+  {
+    "name": "plugins/mrspicky",
+    "path": "plugins/mrspicky",
+    "url": "https://github.com/patois/mrspicky.git",
+    "owner": "patois",
+    "repo": "mrspicky",
+    "status": "rate_limited",
+    "error": "API 限制，請設定 GitHub token"
+  },
+  {
+    "name": "plugins/flare-ida",
+    "path": "plugins/flare-ida",
+    "url": "https://github.com/mandiant/flare-ida.git",
+    "owner": "mandiant",
+    "repo": "flare-ida",
+    "status": "rate_limited",
+    "error": "API 限制，請設定 GitHub token"
+  },
+  {
+    "name": "plugins/aidapal",
+    "path": "plugins/aidapal",
+    "url": "https://github.com/atredispartners/aidapal.git",
+    "owner": "atredispartners",
+    "repo": "aidapal",
+    "status": "rate_limited",
+    "error": "API 限制，請設定 GitHub token"
+  },
+  {
+    "name": "plugins/Gepetto",
+    "path": "plugins/Gepetto",
+    "url": "https://github.com/JusticeRage/Gepetto.git",
+    "owner": "JusticeRage",
+    "repo": "Gepetto",
+    "status": "rate_limited",
+    "error": "API 限制，請設定 GitHub token"
+  },
+  {
+    "name": "plugins/hashdb-ida",
+    "path": "plugins/hashdb-ida",
+    "url": "https://github.com/OALabs/hashdb-ida.git",
+    "owner": "OALabs",
+    "repo": "hashdb-ida",
+    "status": "rate_limited",
+    "error": "API 限制，請設定 GitHub token"
+  },
+  {
+    "name": "plugins/Hyara",
+    "path": "plugins/Hyara",
+    "url": "https://github.com/hyuunnn/Hyara.git",
+    "owner": "hyuunnn",
+    "repo": "Hyara",
+    "status": "rate_limited",
+    "error": "API 限制，請設定 GitHub token"
+  },
+  {
+    "name": "plugins/dsync",
+    "path": "plugins/dsync",
+    "url": "https://github.com/patois/dsync.git",
+    "owner": "patois",
+    "repo": "dsync",
+    "status": "rate_limited",
+    "error": "API 限制，請設定 GitHub token"
+  },
+  {
+    "name": "plugins/tenet",
+    "path": "plugins/tenet",
+    "url": "https://github.com/gaasedelen/tenet.git",
+    "owner": "gaasedelen",
+    "repo": "tenet",
+    "status": "rate_limited",
+    "error": "API 限制，請設定 GitHub token"
+  },
+  {
+    "name": "plugins/patching",
+    "path": "plugins/patching",
+    "url": "https://github.com/gaasedelen/patching.git",
+    "owner": "gaasedelen",
+    "repo": "patching",
+    "status": "rate_limited",
+    "error": "API 限制，請設定 GitHub token"
+  },
+  {
+    "name": "plugins/HexraysToolbox",
+    "path": "plugins/HexraysToolbox",
+    "url": "https://github.com/patois/HexraysToolbox.git",
+    "owner": "patois",
+    "repo": "HexraysToolbox",
+    "status": "rate_limited",
+    "error": "API 限制，請設定 GitHub token"
+  },
+  {
+    "name": "plugins/HRDevHelper",
+    "path": "plugins/HRDevHelper",
+    "url": "https://github.com/patois/HRDevHelper.git",
+    "owner": "patois",
+    "repo": "HRDevHelper",
+    "status": "rate_limited",
+    "error": "API 限制，請設定 GitHub token"
+  },
+  {
+    "name": "plugins/hrtng",
+    "path": "plugins/hrtng",
+    "url": "https://github.com/KasperskyLab/hrtng.git",
+    "owner": "KasperskyLab",
+    "repo": "hrtng",
+    "status": "rate_limited",
+    "error": "API 限制，請設定 GitHub token"
+  },
+  {
+    "name": "plugins/headless-ida",
+    "path": "plugins/headless-ida",
+    "url": "https://github.com/DennyDai/headless-ida.git",
+    "owner": "DennyDai",
+    "repo": "headless-ida",
+    "status": "rate_limited",
+    "error": "API 限制，請設定 GitHub token"
+  },
+  {
+    "name": "modules/hexrays_scripts",
+    "path": "modules/hexrays_scripts",
+    "url": "https://github.com/patois/hexrays_scripts.git",
+    "owner": "patois",
+    "repo": "hexrays_scripts",
+    "status": "rate_limited",
+    "error": "API 限制，請設定 GitHub token"
+  },
+  {
+    "name": "plugins/phrank",
+    "path": "plugins/phrank",
+    "url": "https://github.com/Mizari/phrank.git",
+    "owner": "Mizari",
+    "repo": "phrank",
+    "status": "rate_limited",
+    "error": "API 限制，請設定 GitHub token"
+  },
+  {
+    "name": "plugins/herast",
+    "path": "plugins/herast",
+    "url": "https://github.com/Mizari/herast.git",
+    "owner": "Mizari",
+    "repo": "herast",
+    "status": "rate_limited",
+    "error": "API 限制，請設定 GitHub token"
+  },
+  {
+    "name": "plugins/XrefsExt",
+    "path": "plugins/XrefsExt",
+    "url": "https://github.com/zengfr/XrefsExt.git",
+    "owner": "zengfr",
+    "repo": "XrefsExt",
+    "status": "rate_limited",
+    "error": "API 限制，請設定 GitHub token"
+  },
+  {
+    "name": "plugins/abyss",
+    "path": "plugins/abyss",
+    "url": "https://github.com/patois/abyss.git",
+    "owner": "patois",
+    "repo": "abyss",
+    "status": "rate_limited",
+    "error": "API 限制，請設定 GitHub token"
+  },
+  {
+    "name": "plugins/flare-floss",
+    "path": "plugins/flare-floss",
+    "url": "https://github.com/mandiant/flare-floss.git",
+    "owner": "mandiant",
+    "repo": "flare-floss",
+    "status": "rate_limited",
+    "error": "API 限制，請設定 GitHub token"
+  },
+  {
+    "name": "plugins/HexRaysCodeXplorer",
+    "path": "plugins/HexRaysCodeXplorer",
+    "url": "https://github.com/REhints/HexRaysCodeXplorer.git",
+    "owner": "REhints",
+    "repo": "HexRaysCodeXplorer",
+    "status": "rate_limited",
+    "error": "API 限制，請設定 GitHub token"
+  },
+  {
+    "name": "plugins/LazyIDA",
+    "path": "plugins/LazyIDA",
+    "url": "https://github.com/L4ys/LazyIDA.git",
+    "owner": "L4ys",
+    "repo": "LazyIDA",
+    "status": "rate_limited",
+    "error": "API 限制，請設定 GitHub token"
+  },
+  {
+    "name": "plugins/ida_ifl",
+    "path": "plugins/ida_ifl",
+    "url": "https://github.com/hasherezade/ida_ifl.git",
+    "owner": "hasherezade",
+    "repo": "ida_ifl",
+    "status": "rate_limited",
+    "error": "API 限制，請設定 GitHub token"
+  },
+  {
+    "name": "plugins/idamagicstrings",
+    "path": "plugins/idamagicstrings",
+    "url": "https://github.com/joxeankoret/idamagicstrings.git",
+    "owner": "joxeankoret",
+    "repo": "idamagicstrings",
+    "status": "rate_limited",
+    "error": "API 限制，請設定 GitHub token"
+  },
+  {
+    "name": "plugins/deREferencing",
+    "path": "plugins/deREferencing",
+    "url": "https://github.com/danigargu/deREferencing.git",
+    "owner": "danigargu",
+    "repo": "deREferencing",
+    "status": "rate_limited",
+    "error": "API 限制，請設定 GitHub token"
+  },
+  {
+    "name": "plugins/classinformer",
+    "path": "plugins/classinformer",
+    "url": "https://github.com/herosi/classinformer.git",
+    "owner": "herosi",
+    "repo": "classinformer",
+    "status": "rate_limited",
+    "error": "API 限制，請設定 GitHub token"
+  },
+  {
+    "name": "plugins/FindFunc",
+    "path": "plugins/FindFunc",
+    "url": "https://github.com/FelixBer/FindFunc.git",
+    "owner": "FelixBer",
+    "repo": "FindFunc",
+    "status": "rate_limited",
+    "error": "API 限制，請設定 GitHub token"
+  },
+  {
+    "name": "plugins/ida_bitfields",
+    "path": "plugins/ida_bitfields",
+    "url": "https://github.com/JustasMasiulis/ida_bitfields.git",
+    "owner": "JustasMasiulis",
+    "repo": "ida_bitfields",
+    "status": "rate_limited",
+    "error": "API 限制，請設定 GitHub token"
+  },
+  {
+    "name": "plugins/IDA-Fusion",
+    "path": "plugins/IDA-Fusion",
+    "url": "https://github.com/senator715/IDA-Fusion.git",
+    "owner": "senator715",
+    "repo": "IDA-Fusion",
+    "status": "rate_limited",
+    "error": "API 限制，請設定 GitHub token"
+  },
+  {
+    "name": "plugins/CTO",
+    "path": "plugins/CTO",
+    "url": "https://github.com/herosi/CTO.git",
+    "owner": "herosi",
+    "repo": "CTO",
+    "status": "rate_limited",
+    "error": "API 限制，請設定 GitHub token"
+  },
+  {
+    "name": "plugins/GhidraDec",
+    "path": "plugins/GhidraDec",
+    "url": "https://github.com/GregoryMorse/GhidraDec.git",
+    "owner": "GregoryMorse",
+    "repo": "GhidraDec",
+    "status": "rate_limited",
+    "error": "API 限制，請設定 GitHub token"
+  },
+  {
+    "name": "plugins/IDALibcAutoFlags",
+    "path": "plugins/IDALibcAutoFlags",
+    "url": "https://github.com/0xMirasio/IDALibcAutoFlags.git",
+    "owner": "0xMirasio",
+    "repo": "IDALibcAutoFlags",
+    "status": "rate_limited",
+    "error": "API 限制，請設定 GitHub token"
+  },
+  {
+    "name": "plugins/stalker_trace_so",
+    "path": "plugins/stalker_trace_so",
+    "url": "https://github.com/oacia/stalker_trace_so.git",
+    "owner": "oacia",
+    "repo": "stalker_trace_so",
+    "status": "rate_limited",
+    "error": "API 限制，請設定 GitHub token"
+  },
+  {
+    "name": "plugins/auto-enum",
+    "path": "plugins/auto-enum",
+    "url": "https://github.com/junron/auto-enum.git",
+    "owner": "junron",
+    "repo": "auto-enum",
+    "status": "rate_limited",
+    "error": "API 限制，請設定 GitHub token"
+  },
+  {
+    "name": "plugins/trace_natives",
+    "path": "plugins/trace_natives",
+    "url": "https://github.com/Pr0214/trace_natives.git",
+    "owner": "Pr0214",
+    "repo": "trace_natives",
+    "status": "rate_limited",
+    "error": "API 限制，請設定 GitHub token"
+  },
+  {
+    "name": "plugins/OpenLumina",
+    "path": "plugins/OpenLumina",
+    "url": "https://github.com/tomrus88/OpenLumina.git",
+    "owner": "tomrus88",
+    "repo": "OpenLumina",
+    "status": "rate_limited",
+    "error": "API 限制，請設定 GitHub token"
+  },
+  {
+    "name": "plugins/MyIdaFrida",
+    "path": "plugins/MyIdaFrida",
+    "url": "https://github.com/AnxiangLemon/MyIdaFrida.git",
+    "owner": "AnxiangLemon",
+    "repo": "MyIdaFrida",
+    "status": "rate_limited",
+    "error": "API 限制，請設定 GitHub token"
+  },
+  {
+    "name": "plugins/auto_re",
+    "path": "plugins/auto_re",
+    "url": "https://github.com/a1ext/auto_re.git",
+    "owner": "a1ext",
+    "repo": "auto_re",
+    "status": "rate_limited",
+    "error": "API 限制，請設定 GitHub token"
+  },
+  {
+    "name": "plugins/SysNR-FuncFinder",
+    "path": "plugins/SysNR-FuncFinder",
+    "url": "https://github.com/WPeace-HcH/SysNR-FuncFinder.git",
+    "owner": "WPeace-HcH",
+    "repo": "SysNR-FuncFinder",
+    "status": "rate_limited",
+    "error": "API 限制，請設定 GitHub token"
+  },
+  {
+    "name": "plugins/AutoResolv",
+    "path": "plugins/AutoResolv",
+    "url": "https://github.com/0xMirasio/AutoResolv.git",
+    "owner": "0xMirasio",
+    "repo": "AutoResolv",
+    "status": "rate_limited",
+    "error": "API 限制，請設定 GitHub token"
+  },
+  {
+    "name": "plugins/protobuf-finder",
+    "path": "plugins/protobuf-finder",
+    "url": "https://github.com/Accenture/protobuf-finder.git",
+    "owner": "Accenture",
+    "repo": "protobuf-finder",
+    "status": "rate_limited",
+    "error": "API 限制，請設定 GitHub token"
+  },
+  {
+    "name": "plugins/jni_helper",
+    "path": "plugins/jni_helper",
+    "url": "https://github.com/evilpan/jni_helper.git",
+    "owner": "evilpan",
+    "repo": "jni_helper",
+    "status": "rate_limited",
+    "error": "API 限制，請設定 GitHub token"
+  },
+  {
+    "name": "plugins/ungarble_ida",
+    "path": "plugins/ungarble_ida",
+    "url": "https://github.com/hexamine22/ungarble_ida.git",
+    "owner": "hexamine22",
+    "repo": "ungarble_ida",
+    "status": "rate_limited",
+    "error": "API 限制，請設定 GitHub token"
+  },
+  {
+    "name": "plugins/IDA-TimeTravelEmulator",
+    "path": "plugins/IDA-TimeTravelEmulator",
+    "url": "https://github.com/Krietz7/IDA-TimeTravelEmulator.git",
+    "owner": "Krietz7",
+    "repo": "IDA-TimeTravelEmulator",
+    "status": "rate_limited",
+    "error": "API 限制，請設定 GitHub token"
+  },
+  {
+    "name": "plugins/idapython-ifred",
+    "path": "plugins/idapython-ifred",
+    "url": "https://github.com/pattern-f/idapython-ifred.git",
+    "owner": "pattern-f",
+    "repo": "idapython-ifred",
+    "status": "rate_limited",
+    "error": "API 限制，請設定 GitHub token"
+  },
+  {
+    "name": "plugins/AutoReverseIDA9.0",
+    "path": "plugins/AutoReverseIDA9.0",
+    "url": "https://github.com/AzDeltaQQ/AutoReverseIDA9.0.git",
+    "owner": "AzDeltaQQ",
+    "repo": "AutoReverseIDA9.0",
+    "status": "rate_limited",
+    "error": "API 限制，請設定 GitHub token"
+  },
+  {
+    "name": "plugins/IDASplitApkDebugging",
+    "path": "plugins/IDASplitApkDebugging",
+    "url": "https://github.com/ccc909/IDASplitApkDebugging.git",
+    "owner": "ccc909",
+    "repo": "IDASplitApkDebugging",
+    "status": "rate_limited",
+    "error": "API 限制，請設定 GitHub token"
+  },
+  {
+    "name": "plugins/ida-scripts",
+    "path": "plugins/ida-scripts",
+    "url": "https://github.com/Ashita-oops/ida-scripts.git",
+    "owner": "Ashita-oops",
+    "repo": "ida-scripts",
+    "status": "rate_limited",
+    "error": "API 限制，請設定 GitHub token"
+  },
+  {
+    "name": "plugins/IDA_ClassInformer_PlugIn",
+    "path": "plugins/IDA_ClassInformer_PlugIn",
+    "url": "https://github.com/kweatherman/IDA_ClassInformer_PlugIn.git",
+    "owner": "kweatherman",
+    "repo": "IDA_ClassInformer_PlugIn",
+    "status": "rate_limited",
+    "error": "API 限制，請設定 GitHub token"
+  },
+  {
+    "name": "plugins/IDA-DataExportPlus",
+    "path": "plugins/IDA-DataExportPlus",
+    "url": "https://github.com/Krietz7/IDA-DataExportPlus.git",
+    "owner": "Krietz7",
+    "repo": "IDA-DataExportPlus",
+    "status": "rate_limited",
+    "error": "API 限制，請設定 GitHub token"
+  },
+  {
+    "name": "plugins/idafridascript",
+    "path": "plugins/idafridascript",
+    "url": "https://github.com/ys1231/idafridascript.git",
+    "owner": "ys1231",
+    "repo": "idafridascript",
+    "status": "rate_limited",
+    "error": "API 限制，請設定 GitHub token"
+  },
+  {
+    "name": "plugins/LazyCross",
+    "path": "plugins/LazyCross",
+    "url": "https://github.com/L4ys/LazyCross.git",
+    "owner": "L4ys",
+    "repo": "LazyCross",
+    "status": "rate_limited",
+    "error": "API 限制，請設定 GitHub token"
+  },
+  {
+    "name": "plugins/Ponce",
+    "path": "plugins/Ponce",
+    "url": "https://github.com/illera88/Ponce.git",
+    "owner": "illera88",
+    "repo": "Ponce",
+    "status": "rate_limited",
+    "error": "API 限制，請設定 GitHub token"
+  },
+  {
+    "name": "plugins/IdaClu",
+    "path": "plugins/IdaClu",
+    "url": "https://github.com/harlamism/IdaClu.git",
+    "owner": "harlamism",
+    "repo": "IdaClu",
+    "status": "rate_limited",
+    "error": "API 限制，請設定 GitHub token"
+  },
+  {
+    "name": "plugins/sigmakerex",
+    "path": "plugins/sigmakerex",
+    "url": "https://github.com/kweatherman/sigmakerex.git",
+    "owner": "kweatherman",
+    "repo": "sigmakerex",
+    "status": "rate_limited",
+    "error": "API 限制，請設定 GitHub token"
+  },
+  {
+    "name": "plugins/HexForge",
+    "path": "plugins/HexForge",
+    "url": "https://github.com/elastic/HexForge.git",
+    "owner": "elastic",
+    "repo": "HexForge",
+    "status": "rate_limited",
+    "error": "API 限制，請設定 GitHub token"
+  },
+  {
+    "name": "plugins/ida-mcp-server-plugin",
+    "path": "plugins/ida-mcp-server-plugin",
+    "url": "https://github.com/taida957789/ida-mcp-server-plugin.git",
+    "owner": "taida957789",
+    "repo": "ida-mcp-server-plugin",
+    "status": "rate_limited",
+    "error": "API 限制，請設定 GitHub token"
+  },
+  {
+    "name": "plugins/ida-pro-loadmap",
+    "path": "plugins/ida-pro-loadmap",
+    "url": "https://github.com/mefistotelis/ida-pro-loadmap.git",
+    "owner": "mefistotelis",
+    "repo": "ida-pro-loadmap",
+    "status": "rate_limited",
+    "error": "API 限制，請設定 GitHub token"
+  },
+  {
+    "name": "plugins/IDA_Ollvm-unflattener",
+    "path": "plugins/IDA_Ollvm-unflattener",
+    "url": "https://github.com/maskelihileci/IDA_Ollvm-unflattener.git",
+    "owner": "maskelihileci",
+    "repo": "IDA_Ollvm-unflattener",
+    "status": "rate_limited",
+    "error": "API 限制，請設定 GitHub token"
+  },
+  {
+    "name": "plugins/ida-pysigmaker",
+    "path": "plugins/ida-pysigmaker",
+    "url": "https://github.com/mahmoudimus/ida-pysigmaker.git",
+    "owner": "mahmoudimus",
+    "repo": "ida-pysigmaker",
+    "status": "rate_limited",
+    "error": "API 限制，請設定 GitHub token"
+  },
+  {
+    "name": "plugins/IDA-MapSymbolParser",
+    "path": "plugins/IDA-MapSymbolParser",
+    "url": "https://github.com/gmh5225/IDA-MapSymbolParser.git",
+    "owner": "gmh5225",
+    "repo": "IDA-MapSymbolParser",
+    "status": "rate_limited",
+    "error": "API 限制，請設定 GitHub token"
+  },
+  {
+    "name": "plugins/WPeChatGPT",
+    "path": "plugins/WPeChatGPT",
+    "url": "https://github.com/WPeace-HcH/WPeChatGPT.git",
+    "owner": "WPeace-HcH",
+    "repo": "WPeChatGPT",
+    "status": "rate_limited",
+    "error": "API 限制，請設定 GitHub token"
+  },
+  {
+    "name": "plugins/IDAFrida",
+    "path": "plugins/IDAFrida",
+    "url": "https://github.com/P4nda0s/IDAFrida.git",
+    "owner": "P4nda0s",
+    "repo": "IDAFrida",
+    "status": "rate_limited",
+    "error": "API 限制，請設定 GitHub token"
+  },
+  {
+    "name": "plugins/AntiXorstr",
+    "path": "plugins/AntiXorstr",
+    "url": "https://github.com/lstaroth/AntiXorstr.git",
+    "owner": "lstaroth",
+    "repo": "AntiXorstr",
+    "status": "rate_limited",
+    "error": "API 限制，請設定 GitHub token"
+  },
+  {
+    "name": "plugins/ida-function-string-associate",
+    "path": "plugins/ida-function-string-associate",
+    "url": "https://github.com/oxiKKK/ida-function-string-associate.git",
+    "owner": "oxiKKK",
+    "repo": "ida-function-string-associate",
+    "status": "rate_limited",
+    "error": "API 限制，請設定 GitHub token"
+  },
+  {
+    "name": "plugins/retdec-idaplugin",
+    "path": "plugins/retdec-idaplugin",
+    "url": "https://github.com/avast/retdec-idaplugin.git",
+    "owner": "avast",
+    "repo": "retdec-idaplugin",
+    "status": "rate_limited",
+    "error": "API 限制，請設定 GitHub token"
+  },
+  {
+    "name": "plugins/labeless",
+    "path": "plugins/labeless",
+    "url": "https://github.com/a1ext/labeless.git",
+    "owner": "a1ext",
+    "repo": "labeless",
+    "status": "rate_limited",
+    "error": "API 限制，請設定 GitHub token"
+  },
+  {
+    "name": "plugins/ida_missinglink",
+    "path": "plugins/ida_missinglink",
+    "url": "https://github.com/kweatherman/ida_missinglink.git",
+    "owner": "kweatherman",
+    "repo": "ida_missinglink",
+    "status": "rate_limited",
+    "error": "API 限制，請設定 GitHub token"
+  },
+  {
+    "name": "plugins/LabSync",
+    "path": "plugins/LabSync",
+    "url": "https://github.com/cellebrite-labs/LabSync.git",
+    "owner": "cellebrite-labs",
+    "repo": "LabSync",
+    "status": "rate_limited",
+    "error": "API 限制，請設定 GitHub token"
+  },
+  {
+    "name": "plugins/FunctionInliner",
+    "path": "plugins/FunctionInliner",
+    "url": "https://github.com/cellebrite-labs/FunctionInliner.git",
+    "owner": "cellebrite-labs",
+    "repo": "FunctionInliner",
+    "status": "rate_limited",
+    "error": "API 限制，請設定 GitHub token"
+  },
+  {
+    "name": "plugins/ida_haru",
+    "path": "plugins/ida_haru",
+    "url": "https://github.com/TakahiroHaruyama/ida_haru.git",
+    "owner": "TakahiroHaruyama",
+    "repo": "ida_haru",
+    "status": "rate_limited",
+    "error": "API 限制，請設定 GitHub token"
+  },
+  {
+    "name": "plugins/ClassMaker",
+    "path": "plugins/ClassMaker",
+    "url": "https://github.com/Pycatchown/ClassMaker.git",
+    "owner": "Pycatchown",
+    "repo": "ClassMaker",
+    "status": "rate_limited",
+    "error": "API 限制，請設定 GitHub token"
+  },
+  {
+    "name": "plugins/ida-venv",
+    "path": "plugins/ida-venv",
+    "url": "https://github.com/Skwteinopteros/ida-venv.git",
+    "owner": "Skwteinopteros",
+    "repo": "ida-venv",
+    "status": "rate_limited",
+    "error": "API 限制，請設定 GitHub token"
+  },
+  {
+    "name": "plugins/IDAComments",
+    "path": "plugins/IDAComments",
+    "url": "https://github.com/NoneShell/IDAComments.git",
+    "owner": "NoneShell",
+    "repo": "IDAComments",
+    "status": "rate_limited",
+    "error": "API 限制，請設定 GitHub token"
+  },
+  {
+    "name": "plugins/x64dbgida",
+    "path": "plugins/x64dbgida",
+    "url": "https://github.com/x64dbg/x64dbgida.git",
+    "owner": "x64dbg",
+    "repo": "x64dbgida",
+    "status": "rate_limited",
+    "error": "API 限制，請設定 GitHub token"
+  }
+]

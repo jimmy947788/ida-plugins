@@ -1,3 +1,7 @@
 __pycache__/
 *.log
 .vscode/
+# 添加生成的文件
+repo_info.json
+submodule_update_log.json
+repo_progress.json
