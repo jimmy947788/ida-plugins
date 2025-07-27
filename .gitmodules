@@ -201,11 +201,6 @@
 	path = plugins/IDA_Ollvm-unflattener
 	url = https://github.com/maskelihileci/IDA_Ollvm-unflattener.git
 
-# https://github.com/mahmoudimus/ida-pysigmaker
-[submodule "plugins/ida-pysigmaker"]
-	path = plugins/ida-pysigmaker
-	url = https://github.com/mahmoudimus/ida-pysigmaker.git
-
 # https://github.com/gmh5225/IDA-MapSymbolParser
 [submodule "plugins/IDA-MapSymbolParser"]
 	path = plugins/IDA-MapSymbolParser
