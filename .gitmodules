@@ -88,10 +88,10 @@
 	path = plugins/CTO
 	url = https://github.com/herosi/CTO.git
 
-#https://github.com/lemontreehuang/HexRaysCodeXplorer_ida9.1
-[submodule "plugins/HexRaysCodeXplorer_ida9.1"]
-	path = plugins/HexRaysCodeXplorer_ida9.1
-	url = https://github.com/lemontreehuang/HexRaysCodeXplorer_ida9.1.git
+# #https://github.com/lemontreehuang/HexRaysCodeXplorer_ida9.1
+# [submodule "plugins/HexRaysCodeXplorer_ida9.1"]
+# 	path = plugins/HexRaysCodeXplorer_ida9.1
+# 	url = https://github.com/lemontreehuang/HexRaysCodeXplorer_ida9.1.git
 
 
 [submodule "plugins/stalker_trace_so"]
@@ -123,34 +123,17 @@
 	path = plugins/ungarble_ida
 	url = https://github.com/hexamine22/ungarble_ida.git
 
-# https://github.com/Krietz7/IDA-TimeTravelEmulator.git
-[submodule "plugins/IDA-TimeTravelEmulator"]
-	path = plugins/IDA-TimeTravelEmulator
-	url = https://github.com/Krietz7/IDA-TimeTravelEmulator.git
-
-	# https://github.com/pattern-f/idapython-ifred.git
-[submodule "plugins/idapython-ifred"]
-	path = plugins/idapython-ifred
-	url = https://github.com/pattern-f/idapython-ifred.git
-
-# https://github.com/AzDeltaQQ/AutoReverseIDA9.0
-[submodule "plugins/AutoReverseIDA9.0"]
-	path = plugins/AutoReverseIDA9.0
-	url = https://github.com/AzDeltaQQ/AutoReverseIDA9.0.git
-
-
 # https://github.com/ccc909/IDASplitApkDebugging
 [submodule "plugins/IDASplitApkDebugging"]
 	path = plugins/IDASplitApkDebugging
 	url = https://github.com/ccc909/IDASplitApkDebugging.git
 
 # https://github.com/Ashita-oops/ida-scripts
-[submodule "plugins/ida-scripts"]
-	path = plugins/ida-scripts
+[submodule "scripts/ida-scripts"]
+	path = scripts/ida-scripts
 	url = https://github.com/Ashita-oops/ida-scripts.git
 
 # https://github.com/kweatherman/IDA_ClassInformer_PlugIn
-
 [submodule "plugins/IDA_ClassInformer_PlugIn"]
 	path = plugins/IDA_ClassInformer_PlugIn
 	url = https://github.com/kweatherman/IDA_ClassInformer_PlugIn.git
@@ -236,10 +219,6 @@
 	path = plugins/labeless
 	url = https://github.com/a1ext/labeless.git
 
-# https://github.com/kweatherman/ida_missinglink
-[submodule "plugins/ida_missinglink"]
-	path = plugins/ida_missinglink
-	url = https://github.com/kweatherman/ida_missinglink.git
 
 
 # https://github.com/cellebrite-labs/LabSync
@@ -287,10 +266,6 @@
 	path = plugins/ida-pro-idb-database
 	url = https://github.com/zengfr/ida-pro-idb-database.git
 
-#	https://github.com/zengfr/HexRaysCodeXplorer_plugin_for_ida_pro
-[submodule "plugins/HexRaysCodeXplorer_plugin_for_ida_pro"]
-	path = plugins/HexRaysCodeXplorer_plugin_for_ida_pro
-	url = https://github.com/zengfr/HexRaysCodeXplorer_plugin_for_ida_pro.git
 
 # https://github.com/nlitsme/pyidbutil
 [submodule "plugins/pyidbutil"]
@@ -312,27 +287,14 @@
 	path = plugins/flare-vm
 	url = https://github.com/mandiant/flare-vm.git
 
-# https://github.com/CrackerCat/fentapatch
-[submodule "plugins/fentapatch"]
-	path = plugins/fentapatch
-	url = https://github.com/CrackerCat/fentapatch.git
 
-#https://github.com/alexander-pick/ida-pro-function-hunter
 [submodule "plugins/ida-pro-function-hunter"]
 	path = plugins/ida-pro-function-hunter
 	url = https://github.com/alexander-pick/ida-pro-function-hunter.git
 
-# https://github.com/islipnot/AutoStruct
-[submodule "plugins/AutoStruct"]
-	path = plugins/AutoStruct
-	url = https://github.com/islipnot/AutoStruct.git
-
-
-
-
 # https://github.com/doronz88/ida-scripts
-[submodule "scripts/ida-scripts"]
-	path = scripts/ida-scripts
+[submodule "scripts/ida-scripts2"]
+	path = scripts/ida-scripts2
 	url = https://github.com/doronz88/ida-scripts.git
 
 # https://github.com/ZjW1nd/Better-printk-IDA9
@@ -345,37 +307,17 @@
 	path = plugins/emuit
 	url = https://github.com/AzzOnFire/emuit.git
 
-# https://github.com/stuxnet147/IDA-Assistant
-[submodule "plugins/IDA-Assistant"]
-	path = plugins/IDA-Assistant
-	url = https://github.com/stuxnet147/IDA-Assistant.git
 
-# https://github.com/reveny/Android-JNI-Helper
-[submodule "plugins/Android-JNI-Helper"]
-	path = plugins/Android-JNI-Helper
-	url = https://github.com/reveny/Android-JNI-Helper.git
 
 # https://github.com/REDasmOrg/REDasm
 [submodule "plugins/REDasm"]
 	path = plugins/REDasm
 	url = https://github.com/REDasmOrg/REDasm.git
 
-
-# https://github.com/reversinglabs/reversinglabs-yara-rules
-[submodule "plugins/reversinglabs-yara-rules"]
-	path = plugins/reversinglabs-yara-rules
-	url = https://github.com/reversinglabs/reversinglabs-yara-rules.git
-
 # https://github.com/binsync/binsync
-
 [submodule "plugins/binsync"]
 	path = plugins/binsync
 	url = https://github.com/binsync/binsync.git
-
-# https://github.com/google/binexport
-[submodule "plugins/binexport"]
-	path = plugins/binexport
-	url = https://github.com/google/binexport.git
 
 # https://github.com/doronz88/fa
 [submodule "plugins/fa"]
@@ -396,3 +338,13 @@
 [submodule "plugins/xdefla"]
 	path = plugins/xdefla
 	url = https://github.com/jiutian666/xdefla.git
+
+#https://github.com/Sumandora/SignatureScanner
+[submodule "plugins/SignatureScanner"]
+	path = plugins/SignatureScanner
+	url = https://github.com/Sumandora/SignatureScanner.git
+
+# https://github.com/joxeankoret/idamagicstrings
+[submodule "plugins/idamagicstrings"]
+	path = plugins/idamagicstrings
+	url = https://github.com/joxeankoret/idamagicstrings.git
