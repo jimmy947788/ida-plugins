@@ -58,12 +58,6 @@
 	url = https://github.com/patois/hexrays_scripts.git
 
 
-[submodule "plugins/XrefsExt"]
-	path = plugins/XrefsExt
-	url = https://github.com/zengfr/XrefsExt.git
-
-
-
 [submodule "plugins/flare-floss"]
 	path = plugins/flare-floss
 	url = https://github.com/mandiant/flare-floss.git
@@ -94,14 +88,12 @@
 	path = plugins/CTO
 	url = https://github.com/herosi/CTO.git
 
-[submodule "plugins/GhidraDec"]
-	path = plugins/GhidraDec
-	url = https://github.com/GregoryMorse/GhidraDec.git
+#https://github.com/lemontreehuang/HexRaysCodeXplorer_ida9.1
+[submodule "plugins/HexRaysCodeXplorer_ida9.1"]
+	path = plugins/HexRaysCodeXplorer_ida9.1
+	url = https://github.com/lemontreehuang/HexRaysCodeXplorer_ida9.1.git
 
 
-[submodule "plugins/IDALibcAutoFlags"]
-	path = plugins/IDALibcAutoFlags
-	url = https://github.com/0xMirasio/IDALibcAutoFlags.git
 [submodule "plugins/stalker_trace_so"]
 	path = plugins/stalker_trace_so
 	url = https://github.com/oacia/stalker_trace_so.git
