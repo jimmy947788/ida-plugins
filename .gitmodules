@@ -14,9 +14,6 @@
 	path = plugins/bincat
 	url = https://github.com/airbus-seclab/bincat.git
 	
-[submodule "plugins/IdaClu"]
-	path = plugins/IdaClu
-	url = https://github.com/harlamism/IdaClu.git
 [submodule "plugins/keypatch"]
 	path = plugins/keypatch
 	url = https://github.com/keystone-engine/keypatch.git
@@ -118,12 +115,8 @@
 [submodule "plugins/GhidraDec"]
 	path = plugins/GhidraDec
 	url = https://github.com/GregoryMorse/GhidraDec.git
-[submodule "plugins/IDA-Pro-9.0-SigMaker"]
-	path = plugins/IDA-Pro-9.0-SigMaker
-	url = https://github.com/TKazer/IDA-Pro-9.0-SigMaker.git
-[submodule "plugins/HexForge"]
-	path = plugins/HexForge
-	url = https://github.com/elastic/HexForge.git
+
+
 [submodule "plugins/IDALibcAutoFlags"]
 	path = plugins/IDALibcAutoFlags
 	url = https://github.com/0xMirasio/IDALibcAutoFlags.git
@@ -157,3 +150,170 @@
 [submodule "plugins/jni_helper"]
 	path = plugins/jni_helper
 	url = https://github.com/evilpan/jni_helper.git
+
+# https://github.com/hexamine22/ungarble_ida
+[submodule "plugins/ungarble_ida"]
+	path = plugins/ungarble_ida
+	url = https://github.com/hexamine22/ungarble_ida.git
+
+# https://github.com/Krietz7/IDA-TimeTravelEmulator.git
+[submodule "plugins/IDA-TimeTravelEmulator"]
+	path = plugins/IDA-TimeTravelEmulator
+	url = https://github.com/Krietz7/IDA-TimeTravelEmulator.git
+
+	# https://github.com/pattern-f/idapython-ifred.git
+[submodule "plugins/idapython-ifred"]
+	path = plugins/idapython-ifred
+	url = https://github.com/pattern-f/idapython-ifred.git
+
+# https://github.com/AzDeltaQQ/AutoReverseIDA9.0
+[submodule "plugins/AutoReverseIDA9.0"]
+	path = plugins/AutoReverseIDA9.0
+	url = https://github.com/AzDeltaQQ/AutoReverseIDA9.0.git
+
+
+# https://github.com/ccc909/IDASplitApkDebugging
+[submodule "plugins/IDASplitApkDebugging"]
+	path = plugins/IDASplitApkDebugging
+	url = https://github.com/ccc909/IDASplitApkDebugging.git
+
+# https://github.com/Ashita-oops/ida-scripts
+[submodule "plugins/ida-scripts"]
+	path = plugins/ida-scripts
+	url = https://github.com/Ashita-oops/ida-scripts.git
+
+# https://github.com/kweatherman/IDA_ClassInformer_PlugIn
+
+[submodule "plugins/IDA_ClassInformer_PlugIn"]
+	path = plugins/IDA_ClassInformer_PlugIn
+	url = https://github.com/kweatherman/IDA_ClassInformer_PlugIn.git
+
+# https://github.com/Krietz7/IDA-DataExportPlus
+[submodule "plugins/IDA-DataExportPlus"]
+	path = plugins/IDA-DataExportPlus
+	url = https://github.com/Krietz7/IDA-DataExportPlus.git
+
+# https://github.com/ys1231/idafridascript
+[submodule "plugins/idafridascript"]
+	path = plugins/idafridascript
+	url = https://github.com/ys1231/idafridascript.git
+
+# https://github.com/L4ys/LazyCross
+[submodule "plugins/LazyCross"]
+	path = plugins/LazyCross
+	url = https://github.com/L4ys/LazyCross.git
+# https://github.com/illera88/Ponce
+[submodule "plugins/Ponce"]
+	path = plugins/Ponce
+	url = https://github.com/illera88/Ponce.git
+
+	# https://github.com/harlamism/IdaClu
+[submodule "plugins/IdaClu"]
+	path = plugins/IdaClu
+	url = https://github.com/harlamism/IdaClu.git
+
+# https://github.com/kweatherman/sigmakerex
+[submodule "plugins/sigmakerex"]
+	path = plugins/sigmakerex
+	url = https://github.com/kweatherman/sigmakerex.git
+
+#v https://github.com/elastic/HexForge
+[submodule "plugins/HexForge"]
+	path = plugins/HexForge
+	url = https://github.com/elastic/HexForge.git
+
+# https://github.com/taida957789/ida-mcp-server-plugin
+[submodule "plugins/ida-mcp-server-plugin"]
+	path = plugins/ida-mcp-server-plugin
+	url = https://github.com/taida957789/ida-mcp-server-plugin.git
+
+# https://github.com/mefistotelis/ida-pro-loadmap
+[submodule "plugins/ida-pro-loadmap"]
+	path = plugins/ida-pro-loadmap
+	url = https://github.com/mefistotelis/ida-pro-loadmap.git
+
+# https://github.com/maskelihileci/IDA_Ollvm-unflattener
+[submodule "plugins/IDA_Ollvm-unflattener"]
+	path = plugins/IDA_Ollvm-unflattener
+	url = https://github.com/maskelihileci/IDA_Ollvm-unflattener.git
+
+# https://github.com/mahmoudimus/ida-pysigmaker
+[submodule "plugins/ida-pysigmaker"]
+	path = plugins/ida-pysigmaker
+	url = https://github.com/mahmoudimus/ida-pysigmaker.git
+
+# https://github.com/gmh5225/IDA-MapSymbolParser
+[submodule "plugins/IDA-MapSymbolParser"]
+	path = plugins/IDA-MapSymbolParser
+	url = https://github.com/gmh5225/IDA-MapSymbolParser.git
+
+# https://github.com/WPeace-HcH/WPeChatGPT
+[submodule "plugins/WPeChatGPT"]
+	path = plugins/WPeChatGPT
+	url = https://github.com/WPeace-HcH/WPeChatGPT.git
+
+# https://github.com/P4nda0s/IDAFrida
+[submodule "plugins/IDAFrida"]
+	path = plugins/IDAFrida
+	url = https://github.com/P4nda0s/IDAFrida.git
+
+# https://github.com/lstaroth/AntiXorstr
+[submodule "plugins/AntiXorstr"]
+	path = plugins/AntiXorstr
+	url = https://github.com/lstaroth/AntiXorstr.git
+
+# https://github.com/oxiKKK/ida-function-string-associate
+[submodule "plugins/ida-function-string-associate"]
+	path = plugins/ida-function-string-associate
+	url = https://github.com/oxiKKK/ida-function-string-associate.git
+
+# https://github.com/avast/retdec-idaplugin
+[submodule "plugins/retdec-idaplugin"]
+	path = plugins/retdec-idaplugin
+	url = https://github.com/avast/retdec-idaplugin.git
+
+# https://github.com/a1ext/labeless
+[submodule "plugins/labeless"]
+	path = plugins/labeless
+	url = https://github.com/a1ext/labeless.git	
+
+# https://github.com/kweatherman/ida_missinglink
+[submodule "plugins/ida_missinglink"]
+	path = plugins/ida_missinglink
+	url = https://github.com/kweatherman/ida_missinglink.git
+
+
+# https://github.com/cellebrite-labs/LabSync
+[submodule "plugins/LabSync"]
+	path = plugins/LabSync
+	url = https://github.com/cellebrite-labs/LabSync.git
+
+# https://github.com/cellebrite-labs/FunctionInliner
+[submodule "plugins/FunctionInliner"]
+	path = plugins/FunctionInliner
+	url = https://github.com/cellebrite-labs/FunctionInliner.git
+
+# https://github.com/TakahiroHaruyama/ida_haru
+[submodule "plugins/ida_haru"]
+	path = plugins/ida_haru
+	url = https://github.com/TakahiroHaruyama/ida_haru.git	
+
+# https://github.com/Pycatchown/ClassMaker
+[submodule "plugins/ClassMaker"]
+	path = plugins/ClassMaker
+	url = https://github.com/Pycatchown/ClassMaker.git
+
+# https://github.com/Skwteinopteros/ida-venv
+[submodule "plugins/ida-venv"]
+	path = plugins/ida-venv
+	url = https://github.com/Skwteinopteros/ida-venv.git	
+
+# https://github.com/NoneShell/IDAComments
+[submodule "plugins/IDAComments"]
+	path = plugins/IDAComments
+	url = https://github.com/NoneShell/IDAComments.git
+
+# https://github.com/x64dbg/x64dbgida
+[submodule "plugins/x64dbgida"]
+	path = plugins/x64dbgida
+	url = https://github.com/x64dbg/x64dbgida.git
