@@ -3,12 +3,14 @@
 檢查 .gitmodules 中每個 GitHub 專案的星星數和最後更新日期
 """
 
+import os
 import re
 import time
 import json
 import sys
 import subprocess
 from datetime import datetime
+from dotenv import load_dotenv
 from typing import List, Dict, Tuple, Optional
 try:
     import urllib.request
@@ -16,6 +18,8 @@ try:
     HAS_URLLIB = True
 except ImportError:
     HAS_URLLIB = False
+
+load_dotenv()
 
 def parse_gitmodules(file_path: str) -> List[Dict[str, str]]:
     """解析 .gitmodules 文件，提取 submodule 資訊"""
@@ -340,7 +344,7 @@ def main():
         return
     
     # GitHub token (可選，用於提高 API 限制)
-    github_token = None  # 您可以在這裡設定您的 GitHub token
+    github_token = os.getenv('GITHUB_TOKEN')
     
     results = []
     github_repos = []
@@ -361,7 +365,6 @@ def main():
     
     print(f"其中 {len(github_repos)} 個是 GitHub 專案")
     print("正在獲取專案資訊...")
-    print("⏰ 使用 2 秒間隔避免 API 限制...")
     print()
     
     # 獲取每個 GitHub 專案的資訊
@@ -387,9 +390,6 @@ def main():
         
         results.append(result)
         
-        # 避免觸發 GitHub API 限制
-        if i < len(github_repos) - 1:
-            time.sleep(5.0)  # 增加到 2 秒間隔
     
     print()
     print("=" * 80)

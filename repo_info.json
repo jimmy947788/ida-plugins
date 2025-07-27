@@ -12,8 +12,14 @@
     "url": "https://github.com/alexhude/uEmu.git",
     "owner": "alexhude",
     "repo": "uEmu",
-    "status": "rate_limited",
-    "error": "API 限制，請設定 GitHub token"
+    "github_url": "https://github.com/alexhude/uEmu.git",
+    "stars": 1182,
+    "last_updated": "2025-07-26T23:16:35Z",
+    "description": "Tiny cute emulator plugin for IDA based on unicorn.",
+    "language": "Python",
+    "archived": false,
+    "fork": false,
+    "status": "success"
   },
   {
     "name": "plugins/findcrypt-yara",
@@ -21,8 +27,14 @@
     "url": "https://github.com/polymorf/findcrypt-yara.git",
     "owner": "polymorf",
     "repo": "findcrypt-yara",
-    "status": "rate_limited",
-    "error": "API 限制，請設定 GitHub token"
+    "github_url": "https://github.com/polymorf/findcrypt-yara.git",
+    "stars": 1542,
+    "last_updated": "2025-07-25T08:28:19Z",
+    "description": "IDA pro plugin to find crypto constants (and more)",
+    "language": "Python",
+    "archived": false,
+    "fork": false,
+    "status": "success"
   },
   {
     "name": "plugins/bincat",
@@ -30,8 +42,14 @@
     "url": "https://github.com/airbus-seclab/bincat.git",
     "owner": "airbus-seclab",
     "repo": "bincat",
-    "status": "rate_limited",
-    "error": "API 限制，請設定 GitHub token"
+    "github_url": "https://github.com/airbus-seclab/bincat.git",
+    "stars": 1817,
+    "last_updated": "2025-07-26T23:15:28Z",
+    "description": "Binary code static analyser, with IDA integration. Performs value and taint analysis, type reconstruction, use-after-free and double-free detection",
+    "language": "OCaml",
+    "archived": false,
+    "fork": false,
+    "status": "success"
   },
   {
     "name": "plugins/keypatch",
@@ -39,8 +57,14 @@
     "url": "https://github.com/keystone-engine/keypatch.git",
     "owner": "keystone-engine",
     "repo": "keypatch",
-    "status": "rate_limited",
-    "error": "API 限制，請設定 GitHub token"
+    "github_url": "https://github.com/keystone-engine/keypatch.git",
+    "stars": 1682,
+    "last_updated": "2025-07-27T19:06:03Z",
+    "description": "Multi-architecture assembler for IDA Pro. Powered by Keystone Engine.",
+    "language": "Python",
+    "archived": false,
+    "fork": false,
+    "status": "success"
   },
   {
     "name": "plugins/frinet",
@@ -48,17 +72,14 @@
     "url": "https://github.com/synacktiv/frinet.git",
     "owner": "synacktiv",
     "repo": "frinet",
-    "status": "rate_limited",
-    "error": "API 限制，請設定 GitHub token"
-  },
-  {
-    "name": "plugins/FunctionInliner",
-    "path": "plugins/FunctionInliner",
-    "url": "https://github.com/cellebrite-labs/FunctionInliner.git",
-    "owner": "cellebrite-labs",
-    "repo": "FunctionInliner",
-    "status": "rate_limited",
-    "error": "API 限制，請設定 GitHub token"
+    "github_url": "https://github.com/synacktiv/frinet.git",
+    "stars": 555,
+    "last_updated": "2025-07-21T15:34:08Z",
+    "description": "Frida-based tracer for easier reverse-engineering on Android, iOS, Linux, Windows and most related architectures.",
+    "language": "C",
+    "archived": false,
+    "fork": false,
+    "status": "success"
   },
   {
     "name": "plugins/mrspicky",
@@ -66,8 +87,14 @@
     "url": "https://github.com/patois/mrspicky.git",
     "owner": "patois",
     "repo": "mrspicky",
-    "status": "rate_limited",
-    "error": "API 限制，請設定 GitHub token"
+    "github_url": "https://github.com/patois/mrspicky.git",
+    "stars": 126,
+    "last_updated": "2025-07-20T18:35:18Z",
+    "description": "MrsPicky - An IDAPython decompiler script that helps auditing memcpy() and memmove() calls",
+    "language": "Python",
+    "archived": false,
+    "fork": false,
+    "status": "success"
   },
   {
     "name": "plugins/flare-ida",
@@ -75,8 +102,14 @@
     "url": "https://github.com/mandiant/flare-ida.git",
     "owner": "mandiant",
     "repo": "flare-ida",
-    "status": "rate_limited",
-    "error": "API 限制，請設定 GitHub token"
+    "github_url": "https://github.com/mandiant/flare-ida.git",
+    "stars": 2367,
+    "last_updated": "2025-07-25T01:18:16Z",
+    "description": "IDA Pro utilities from FLARE team",
+    "language": "Python",
+    "archived": false,
+    "fork": false,
+    "status": "success"
   },
   {
     "name": "plugins/aidapal",
@@ -84,8 +117,14 @@
     "url": "https://github.com/atredispartners/aidapal.git",
     "owner": "atredispartners",
     "repo": "aidapal",
-    "status": "rate_limited",
-    "error": "API 限制，請設定 GitHub token"
+    "github_url": "https://github.com/atredispartners/aidapal.git",
+    "stars": 318,
+    "last_updated": "2025-07-22T10:02:27Z",
+    "description": "aiDAPal is an IDA Pro plugin that uses a locally running LLM that has been fine-tuned for Hex-Rays pseudocode to assist with code analysis.",
+    "language": "Python",
+    "archived": false,
+    "fork": false,
+    "status": "success"
   },
   {
     "name": "plugins/Gepetto",
@@ -93,8 +132,14 @@
     "url": "https://github.com/JusticeRage/Gepetto.git",
     "owner": "JusticeRage",
     "repo": "Gepetto",
-    "status": "rate_limited",
-    "error": "API 限制，請設定 GitHub token"
+    "github_url": "https://github.com/JusticeRage/Gepetto.git",
+    "stars": 3134,
+    "last_updated": "2025-07-26T09:32:22Z",
+    "description": "IDA plugin which queries language models to speed up reverse-engineering",
+    "language": "Python",
+    "archived": false,
+    "fork": false,
+    "status": "success"
   },
   {
     "name": "plugins/hashdb-ida",
@@ -102,8 +147,14 @@
     "url": "https://github.com/OALabs/hashdb-ida.git",
     "owner": "OALabs",
     "repo": "hashdb-ida",
-    "status": "rate_limited",
-    "error": "API 限制，請設定 GitHub token"
+    "github_url": "https://github.com/OALabs/hashdb-ida.git",
+    "stars": 326,
+    "last_updated": "2025-07-27T11:22:15Z",
+    "description": "HashDB API hash lookup plugin for IDA Pro",
+    "language": "Python",
+    "archived": false,
+    "fork": false,
+    "status": "success"
   },
   {
     "name": "plugins/Hyara",
@@ -111,8 +162,14 @@
     "url": "https://github.com/hyuunnn/Hyara.git",
     "owner": "hyuunnn",
     "repo": "Hyara",
-    "status": "rate_limited",
-    "error": "API 限制，請設定 GitHub token"
+    "github_url": "https://github.com/hyuunnn/Hyara.git",
+    "stars": 237,
+    "last_updated": "2025-07-16T04:38:04Z",
+    "description": "Yara rule making tool (IDA Pro & Binary Ninja & Cutter & Ghidra Plugin)",
+    "language": "Python",
+    "archived": false,
+    "fork": false,
+    "status": "success"
   },
   {
     "name": "plugins/dsync",
@@ -120,35 +177,14 @@
     "url": "https://github.com/patois/dsync.git",
     "owner": "patois",
     "repo": "dsync",
-    "status": "rate_limited",
-    "error": "API 限制，請設定 GitHub token"
-  },
-  {
-    "name": "plugins/tenet",
-    "path": "plugins/tenet",
-    "url": "https://github.com/gaasedelen/tenet.git",
-    "owner": "gaasedelen",
-    "repo": "tenet",
-    "status": "rate_limited",
-    "error": "API 限制，請設定 GitHub token"
-  },
-  {
-    "name": "plugins/patching",
-    "path": "plugins/patching",
-    "url": "https://github.com/gaasedelen/patching.git",
-    "owner": "gaasedelen",
-    "repo": "patching",
-    "status": "rate_limited",
-    "error": "API 限制，請設定 GitHub token"
-  },
-  {
-    "name": "plugins/HexraysToolbox",
-    "path": "plugins/HexraysToolbox",
-    "url": "https://github.com/patois/HexraysToolbox.git",
-    "owner": "patois",
-    "repo": "HexraysToolbox",
-    "status": "rate_limited",
-    "error": "API 限制，請設定 GitHub token"
+    "github_url": "https://github.com/patois/dsync.git",
+    "stars": 457,
+    "last_updated": "2025-07-25T15:55:36Z",
+    "description": "IDAPython plugin that synchronizes disassembler and decompiler views",
+    "language": "Python",
+    "archived": false,
+    "fork": false,
+    "status": "success"
   },
   {
     "name": "plugins/HRDevHelper",
@@ -156,8 +192,14 @@
     "url": "https://github.com/patois/HRDevHelper.git",
     "owner": "patois",
     "repo": "HRDevHelper",
-    "status": "rate_limited",
-    "error": "API 限制，請設定 GitHub token"
+    "github_url": "https://github.com/patois/HRDevHelper.git",
+    "stars": 416,
+    "last_updated": "2025-07-25T15:53:51Z",
+    "description": "HexRays ctree visualization plugin",
+    "language": "Python",
+    "archived": false,
+    "fork": false,
+    "status": "success"
   },
   {
     "name": "plugins/hrtng",
@@ -165,8 +207,14 @@
     "url": "https://github.com/KasperskyLab/hrtng.git",
     "owner": "KasperskyLab",
     "repo": "hrtng",
-    "status": "rate_limited",
-    "error": "API 限制，請設定 GitHub token"
+    "github_url": "https://github.com/KasperskyLab/hrtng.git",
+    "stars": 1305,
+    "last_updated": "2025-07-27T16:43:41Z",
+    "description": "IDA Pro plugin with a rich set of features: decryption, deobfuscation, patching, lib code recognition and various pseudocode transformations",
+    "language": "C++",
+    "archived": false,
+    "fork": false,
+    "status": "success"
   },
   {
     "name": "plugins/headless-ida",
@@ -174,8 +222,14 @@
     "url": "https://github.com/DennyDai/headless-ida.git",
     "owner": "DennyDai",
     "repo": "headless-ida",
-    "status": "rate_limited",
-    "error": "API 限制，請設定 GitHub token"
+    "github_url": "https://github.com/DennyDai/headless-ida.git",
+    "stars": 179,
+    "last_updated": "2025-07-25T15:58:36Z",
+    "description": "Run IDA scripts headlessly.",
+    "language": "Python",
+    "archived": false,
+    "fork": false,
+    "status": "success"
   },
   {
     "name": "modules/hexrays_scripts",
@@ -183,44 +237,14 @@
     "url": "https://github.com/patois/hexrays_scripts.git",
     "owner": "patois",
     "repo": "hexrays_scripts",
-    "status": "rate_limited",
-    "error": "API 限制，請設定 GitHub token"
-  },
-  {
-    "name": "plugins/phrank",
-    "path": "plugins/phrank",
-    "url": "https://github.com/Mizari/phrank.git",
-    "owner": "Mizari",
-    "repo": "phrank",
-    "status": "rate_limited",
-    "error": "API 限制，請設定 GitHub token"
-  },
-  {
-    "name": "plugins/herast",
-    "path": "plugins/herast",
-    "url": "https://github.com/Mizari/herast.git",
-    "owner": "Mizari",
-    "repo": "herast",
-    "status": "rate_limited",
-    "error": "API 限制，請設定 GitHub token"
-  },
-  {
-    "name": "plugins/XrefsExt",
-    "path": "plugins/XrefsExt",
-    "url": "https://github.com/zengfr/XrefsExt.git",
-    "owner": "zengfr",
-    "repo": "XrefsExt",
-    "status": "rate_limited",
-    "error": "API 限制，請設定 GitHub token"
-  },
-  {
-    "name": "plugins/abyss",
-    "path": "plugins/abyss",
-    "url": "https://github.com/patois/abyss.git",
-    "owner": "patois",
-    "repo": "abyss",
-    "status": "rate_limited",
-    "error": "API 限制，請設定 GitHub token"
+    "github_url": "https://github.com/patois/hexrays_scripts.git",
+    "stars": 95,
+    "last_updated": "2025-07-25T15:52:45Z",
+    "description": "Various scripts for the Hexrays decompiler",
+    "language": "Python",
+    "archived": false,
+    "fork": false,
+    "status": "success"
   },
   {
     "name": "plugins/flare-floss",
@@ -228,8 +252,14 @@
     "url": "https://github.com/mandiant/flare-floss.git",
     "owner": "mandiant",
     "repo": "flare-floss",
-    "status": "rate_limited",
-    "error": "API 限制，請設定 GitHub token"
+    "github_url": "https://github.com/mandiant/flare-floss.git",
+    "stars": 3601,
+    "last_updated": "2025-07-26T21:39:18Z",
+    "description": "FLARE Obfuscated String Solver - Automatically extract obfuscated strings from malware.",
+    "language": "Python",
+    "archived": false,
+    "fork": false,
+    "status": "success"
   },
   {
     "name": "plugins/HexRaysCodeXplorer",
@@ -237,8 +267,14 @@
     "url": "https://github.com/REhints/HexRaysCodeXplorer.git",
     "owner": "REhints",
     "repo": "HexRaysCodeXplorer",
-    "status": "rate_limited",
-    "error": "API 限制，請設定 GitHub token"
+    "github_url": "https://github.com/REhints/HexRaysCodeXplorer.git",
+    "stars": 2553,
+    "last_updated": "2025-07-26T23:33:22Z",
+    "description": "Hex-Rays Decompiler plugin for better code navigation",
+    "language": "C++",
+    "archived": false,
+    "fork": false,
+    "status": "success"
   },
   {
     "name": "plugins/LazyIDA",
@@ -246,8 +282,14 @@
     "url": "https://github.com/L4ys/LazyIDA.git",
     "owner": "L4ys",
     "repo": "LazyIDA",
-    "status": "rate_limited",
-    "error": "API 限制，請設定 GitHub token"
+    "github_url": "https://github.com/L4ys/LazyIDA.git",
+    "stars": 1275,
+    "last_updated": "2025-07-27T03:04:15Z",
+    "description": "Make your IDA Lazy!",
+    "language": "Python",
+    "archived": false,
+    "fork": false,
+    "status": "success"
   },
   {
     "name": "plugins/ida_ifl",
@@ -255,17 +297,14 @@
     "url": "https://github.com/hasherezade/ida_ifl.git",
     "owner": "hasherezade",
     "repo": "ida_ifl",
-    "status": "rate_limited",
-    "error": "API 限制，請設定 GitHub token"
-  },
-  {
-    "name": "plugins/idamagicstrings",
-    "path": "plugins/idamagicstrings",
-    "url": "https://github.com/joxeankoret/idamagicstrings.git",
-    "owner": "joxeankoret",
-    "repo": "idamagicstrings",
-    "status": "rate_limited",
-    "error": "API 限制，請設定 GitHub token"
+    "github_url": "https://github.com/hasherezade/ida_ifl.git",
+    "stars": 464,
+    "last_updated": "2025-07-12T08:22:22Z",
+    "description": "IFL - Interactive Functions List (plugin for IDA Pro)",
+    "language": "Python",
+    "archived": false,
+    "fork": false,
+    "status": "success"
   },
   {
     "name": "plugins/deREferencing",
@@ -273,17 +312,14 @@
     "url": "https://github.com/danigargu/deREferencing.git",
     "owner": "danigargu",
     "repo": "deREferencing",
-    "status": "rate_limited",
-    "error": "API 限制，請設定 GitHub token"
-  },
-  {
-    "name": "plugins/classinformer",
-    "path": "plugins/classinformer",
-    "url": "https://github.com/herosi/classinformer.git",
-    "owner": "herosi",
-    "repo": "classinformer",
-    "status": "rate_limited",
-    "error": "API 限制，請設定 GitHub token"
+    "github_url": "https://github.com/danigargu/deREferencing.git",
+    "stars": 697,
+    "last_updated": "2025-07-26T01:52:26Z",
+    "description": "IDA Pro plugin that implements more user-friendly register and stack views",
+    "language": "Python",
+    "archived": false,
+    "fork": false,
+    "status": "success"
   },
   {
     "name": "plugins/FindFunc",
@@ -291,8 +327,14 @@
     "url": "https://github.com/FelixBer/FindFunc.git",
     "owner": "FelixBer",
     "repo": "FindFunc",
-    "status": "rate_limited",
-    "error": "API 限制，請設定 GitHub token"
+    "github_url": "https://github.com/FelixBer/FindFunc.git",
+    "stars": 332,
+    "last_updated": "2025-07-04T12:14:54Z",
+    "description": "FindFunc is an IDA Pro plugin to find code functions that contain a certain assembly or byte pattern, reference a certain name or string, or conform to various other constraints.",
+    "language": "Python",
+    "archived": false,
+    "fork": false,
+    "status": "success"
   },
   {
     "name": "plugins/ida_bitfields",
@@ -300,8 +342,14 @@
     "url": "https://github.com/JustasMasiulis/ida_bitfields.git",
     "owner": "JustasMasiulis",
     "repo": "ida_bitfields",
-    "status": "rate_limited",
-    "error": "API 限制，請設定 GitHub token"
+    "github_url": "https://github.com/JustasMasiulis/ida_bitfields.git",
+    "stars": 240,
+    "last_updated": "2025-07-17T06:09:08Z",
+    "description": "IDA Pro plugin to make bitfield accesses easier to grep",
+    "language": "C++",
+    "archived": false,
+    "fork": false,
+    "status": "success"
   },
   {
     "name": "plugins/IDA-Fusion",
@@ -309,8 +357,14 @@
     "url": "https://github.com/senator715/IDA-Fusion.git",
     "owner": "senator715",
     "repo": "IDA-Fusion",
-    "status": "rate_limited",
-    "error": "API 限制，請設定 GitHub token"
+    "github_url": "https://github.com/senator715/IDA-Fusion.git",
+    "stars": 325,
+    "last_updated": "2025-07-21T13:21:00Z",
+    "description": "ULTRA FAST Signature Scanner & Generator for IDA Pro 7/8/9+ Compiled with GCC",
+    "language": "C++",
+    "archived": false,
+    "fork": false,
+    "status": "success"
   },
   {
     "name": "plugins/CTO",
@@ -318,26 +372,29 @@
     "url": "https://github.com/herosi/CTO.git",
     "owner": "herosi",
     "repo": "CTO",
-    "status": "rate_limited",
-    "error": "API 限制，請設定 GitHub token"
+    "github_url": "https://github.com/herosi/CTO.git",
+    "stars": 374,
+    "last_updated": "2025-07-25T06:44:08Z",
+    "description": "Call Tree Overviewer",
+    "language": "Python",
+    "archived": false,
+    "fork": false,
+    "status": "success"
   },
   {
-    "name": "plugins/GhidraDec",
-    "path": "plugins/GhidraDec",
-    "url": "https://github.com/GregoryMorse/GhidraDec.git",
-    "owner": "GregoryMorse",
-    "repo": "GhidraDec",
-    "status": "rate_limited",
-    "error": "API 限制，請設定 GitHub token"
-  },
-  {
-    "name": "plugins/IDALibcAutoFlags",
-    "path": "plugins/IDALibcAutoFlags",
-    "url": "https://github.com/0xMirasio/IDALibcAutoFlags.git",
-    "owner": "0xMirasio",
-    "repo": "IDALibcAutoFlags",
-    "status": "rate_limited",
-    "error": "API 限制，請設定 GitHub token"
+    "name": "plugins/HexRaysCodeXplorer_ida9.1",
+    "path": "plugins/HexRaysCodeXplorer_ida9.1",
+    "url": "https://github.com/lemontreehuang/HexRaysCodeXplorer_ida9.1.git",
+    "owner": "lemontreehuang",
+    "repo": "HexRaysCodeXplorer_ida9.1",
+    "github_url": "https://github.com/lemontreehuang/HexRaysCodeXplorer_ida9.1.git",
+    "stars": 2,
+    "last_updated": "2025-05-25T10:56:55Z",
+    "description": null,
+    "language": "C++",
+    "archived": false,
+    "fork": false,
+    "status": "success"
   },
   {
     "name": "plugins/stalker_trace_so",
@@ -345,8 +402,14 @@
     "url": "https://github.com/oacia/stalker_trace_so.git",
     "owner": "oacia",
     "repo": "stalker_trace_so",
-    "status": "rate_limited",
-    "error": "API 限制，請設定 GitHub token"
+    "github_url": "https://github.com/oacia/stalker_trace_so.git",
+    "stars": 196,
+    "last_updated": "2025-07-14T02:08:44Z",
+    "description": "一个IDA插件，利用frida-stalker在加载so时打印出所有函数调用，解决frida-trace无法在so加载时trace的问题",
+    "language": "Python",
+    "archived": false,
+    "fork": false,
+    "status": "success"
   },
   {
     "name": "plugins/auto-enum",
@@ -354,8 +417,14 @@
     "url": "https://github.com/junron/auto-enum.git",
     "owner": "junron",
     "repo": "auto-enum",
-    "status": "rate_limited",
-    "error": "API 限制，請設定 GitHub token"
+    "github_url": "https://github.com/junron/auto-enum.git",
+    "stars": 449,
+    "last_updated": "2025-07-25T06:44:13Z",
+    "description": "IDA/Binary Ninja Plugin to automatically identify and set enums for standard functions",
+    "language": "Python",
+    "archived": false,
+    "fork": false,
+    "status": "success"
   },
   {
     "name": "plugins/trace_natives",
@@ -363,8 +432,14 @@
     "url": "https://github.com/Pr0214/trace_natives.git",
     "owner": "Pr0214",
     "repo": "trace_natives",
-    "status": "rate_limited",
-    "error": "API 限制，請設定 GitHub token"
+    "github_url": "https://github.com/Pr0214/trace_natives.git",
+    "stars": 545,
+    "last_updated": "2025-07-02T03:59:06Z",
+    "description": "一个小脚本，用于trace so中native函数的调用。",
+    "language": "Python",
+    "archived": false,
+    "fork": false,
+    "status": "success"
   },
   {
     "name": "plugins/OpenLumina",
@@ -372,8 +447,14 @@
     "url": "https://github.com/tomrus88/OpenLumina.git",
     "owner": "tomrus88",
     "repo": "OpenLumina",
-    "status": "rate_limited",
-    "error": "API 限制，請設定 GitHub token"
+    "github_url": "https://github.com/tomrus88/OpenLumina.git",
+    "stars": 124,
+    "last_updated": "2025-07-06T14:24:06Z",
+    "description": "IDA plugin that allows connecting to third party Lumina servers",
+    "language": "C++",
+    "archived": false,
+    "fork": false,
+    "status": "success"
   },
   {
     "name": "plugins/MyIdaFrida",
@@ -381,35 +462,14 @@
     "url": "https://github.com/AnxiangLemon/MyIdaFrida.git",
     "owner": "AnxiangLemon",
     "repo": "MyIdaFrida",
-    "status": "rate_limited",
-    "error": "API 限制，請設定 GitHub token"
-  },
-  {
-    "name": "plugins/auto_re",
-    "path": "plugins/auto_re",
-    "url": "https://github.com/a1ext/auto_re.git",
-    "owner": "a1ext",
-    "repo": "auto_re",
-    "status": "rate_limited",
-    "error": "API 限制，請設定 GitHub token"
-  },
-  {
-    "name": "plugins/SysNR-FuncFinder",
-    "path": "plugins/SysNR-FuncFinder",
-    "url": "https://github.com/WPeace-HcH/SysNR-FuncFinder.git",
-    "owner": "WPeace-HcH",
-    "repo": "SysNR-FuncFinder",
-    "status": "rate_limited",
-    "error": "API 限制，請設定 GitHub token"
-  },
-  {
-    "name": "plugins/AutoResolv",
-    "path": "plugins/AutoResolv",
-    "url": "https://github.com/0xMirasio/AutoResolv.git",
-    "owner": "0xMirasio",
-    "repo": "AutoResolv",
-    "status": "rate_limited",
-    "error": "API 限制，請設定 GitHub token"
+    "github_url": "https://github.com/AnxiangLemon/MyIdaFrida.git",
+    "stars": 110,
+    "last_updated": "2025-06-11T03:15:50Z",
+    "description": "Generate Frida Script",
+    "language": "Python",
+    "archived": false,
+    "fork": false,
+    "status": "success"
   },
   {
     "name": "plugins/protobuf-finder",
@@ -417,8 +477,14 @@
     "url": "https://github.com/Accenture/protobuf-finder.git",
     "owner": "Accenture",
     "repo": "protobuf-finder",
-    "status": "rate_limited",
-    "error": "API 限制，請設定 GitHub token"
+    "github_url": "https://github.com/Accenture/protobuf-finder.git",
+    "stars": 283,
+    "last_updated": "2025-07-23T09:11:11Z",
+    "description": "IDA Pro plugin for reconstructing original .proto files from binary.",
+    "language": "Python",
+    "archived": false,
+    "fork": false,
+    "status": "success"
   },
   {
     "name": "plugins/jni_helper",
@@ -426,8 +492,14 @@
     "url": "https://github.com/evilpan/jni_helper.git",
     "owner": "evilpan",
     "repo": "jni_helper",
-    "status": "rate_limited",
-    "error": "API 限制，請設定 GitHub token"
+    "github_url": "https://github.com/evilpan/jni_helper.git",
+    "stars": 624,
+    "last_updated": "2025-07-23T17:04:05Z",
+    "description": "Find JNI function signatures in APK and apply to reverse-engineering tools.",
+    "language": "C++",
+    "archived": false,
+    "fork": false,
+    "status": "success"
   },
   {
     "name": "plugins/ungarble_ida",
@@ -435,8 +507,14 @@
     "url": "https://github.com/hexamine22/ungarble_ida.git",
     "owner": "hexamine22",
     "repo": "ungarble_ida",
-    "status": "rate_limited",
-    "error": "API 限制，請設定 GitHub token"
+    "github_url": "https://github.com/hexamine22/ungarble_ida.git",
+    "stars": 10,
+    "last_updated": "2025-07-26T01:57:21Z",
+    "description": "IDA 9.0 plugin for decrypting strings encrypted by garble.",
+    "language": "Python",
+    "archived": false,
+    "fork": false,
+    "status": "success"
   },
   {
     "name": "plugins/IDA-TimeTravelEmulator",
@@ -444,8 +522,14 @@
     "url": "https://github.com/Krietz7/IDA-TimeTravelEmulator.git",
     "owner": "Krietz7",
     "repo": "IDA-TimeTravelEmulator",
-    "status": "rate_limited",
-    "error": "API 限制，請設定 GitHub token"
+    "github_url": "https://github.com/Krietz7/IDA-TimeTravelEmulator.git",
+    "stars": 18,
+    "last_updated": "2025-07-25T09:07:22Z",
+    "description": "An IDA Pro plugin that simulate time-travel debugging by emulating code execution with Unicorn.",
+    "language": "Python",
+    "archived": false,
+    "fork": false,
+    "status": "success"
   },
   {
     "name": "plugins/idapython-ifred",
@@ -453,8 +537,14 @@
     "url": "https://github.com/pattern-f/idapython-ifred.git",
     "owner": "pattern-f",
     "repo": "idapython-ifred",
-    "status": "rate_limited",
-    "error": "API 限制，請設定 GitHub token"
+    "github_url": "https://github.com/pattern-f/idapython-ifred.git",
+    "stars": 1,
+    "last_updated": "2025-07-22T10:46:24Z",
+    "description": "port ida plugin ifred to python",
+    "language": "Python",
+    "archived": false,
+    "fork": false,
+    "status": "success"
   },
   {
     "name": "plugins/AutoReverseIDA9.0",
@@ -462,8 +552,14 @@
     "url": "https://github.com/AzDeltaQQ/AutoReverseIDA9.0.git",
     "owner": "AzDeltaQQ",
     "repo": "AutoReverseIDA9.0",
-    "status": "rate_limited",
-    "error": "API 限制，請設定 GitHub token"
+    "github_url": "https://github.com/AzDeltaQQ/AutoReverseIDA9.0.git",
+    "stars": 1,
+    "last_updated": "2025-07-27T11:21:33Z",
+    "description": "A Plugin Designed to Assist in Reverse Engineering for IDA Pro 9.0 . This plugin is tuned for WoW Reverse Engineering and for lower versions of IDA Pro (< 9.0) needs to be downported . This plugin is an active work in progress . ",
+    "language": "Python",
+    "archived": false,
+    "fork": false,
+    "status": "success"
   },
   {
     "name": "plugins/IDASplitApkDebugging",
@@ -471,8 +567,14 @@
     "url": "https://github.com/ccc909/IDASplitApkDebugging.git",
     "owner": "ccc909",
     "repo": "IDASplitApkDebugging",
-    "status": "rate_limited",
-    "error": "API 限制，請設定 GitHub token"
+    "github_url": "https://github.com/ccc909/IDASplitApkDebugging.git",
+    "stars": 0,
+    "last_updated": "2025-07-12T21:02:29Z",
+    "description": "IDA plugin to help with debugging native android code from split apks.",
+    "language": "Python",
+    "archived": false,
+    "fork": false,
+    "status": "success"
   },
   {
     "name": "plugins/ida-scripts",
@@ -480,8 +582,14 @@
     "url": "https://github.com/Ashita-oops/ida-scripts.git",
     "owner": "Ashita-oops",
     "repo": "ida-scripts",
-    "status": "rate_limited",
-    "error": "API 限制，請設定 GitHub token"
+    "github_url": "https://github.com/Ashita-oops/ida-scripts.git",
+    "stars": 1,
+    "last_updated": "2025-07-07T07:54:35Z",
+    "description": "Collections of IDA Plugins developed by me. Some plugins are an improved version on already existing plugins.",
+    "language": "Python",
+    "archived": false,
+    "fork": false,
+    "status": "success"
   },
   {
     "name": "plugins/IDA_ClassInformer_PlugIn",
@@ -489,8 +597,14 @@
     "url": "https://github.com/kweatherman/IDA_ClassInformer_PlugIn.git",
     "owner": "kweatherman",
     "repo": "IDA_ClassInformer_PlugIn",
-    "status": "rate_limited",
-    "error": "API 限制，請設定 GitHub token"
+    "github_url": "https://github.com/kweatherman/IDA_ClassInformer_PlugIn.git",
+    "stars": 83,
+    "last_updated": "2025-07-24T13:03:16Z",
+    "description": "IDA ClassInformer PlugIn",
+    "language": "C++",
+    "archived": false,
+    "fork": false,
+    "status": "success"
   },
   {
     "name": "plugins/IDA-DataExportPlus",
@@ -498,8 +612,14 @@
     "url": "https://github.com/Krietz7/IDA-DataExportPlus.git",
     "owner": "Krietz7",
     "repo": "IDA-DataExportPlus",
-    "status": "rate_limited",
-    "error": "API 限制，請設定 GitHub token"
+    "github_url": "https://github.com/Krietz7/IDA-DataExportPlus.git",
+    "stars": 46,
+    "last_updated": "2025-07-27T14:34:52Z",
+    "description": "a IDA Pro plugin to export data better",
+    "language": "Python",
+    "archived": false,
+    "fork": false,
+    "status": "success"
   },
   {
     "name": "plugins/idafridascript",
@@ -507,8 +627,14 @@
     "url": "https://github.com/ys1231/idafridascript.git",
     "owner": "ys1231",
     "repo": "idafridascript",
-    "status": "rate_limited",
-    "error": "API 限制，請設定 GitHub token"
+    "github_url": "https://github.com/ys1231/idafridascript.git",
+    "stars": 20,
+    "last_updated": "2025-07-21T14:13:20Z",
+    "description": "IDA Pro 9.1 frida script generation plugins",
+    "language": "Python",
+    "archived": false,
+    "fork": false,
+    "status": "success"
   },
   {
     "name": "plugins/LazyCross",
@@ -516,17 +642,14 @@
     "url": "https://github.com/L4ys/LazyCross.git",
     "owner": "L4ys",
     "repo": "LazyCross",
-    "status": "rate_limited",
-    "error": "API 限制，請設定 GitHub token"
-  },
-  {
-    "name": "plugins/Ponce",
-    "path": "plugins/Ponce",
-    "url": "https://github.com/illera88/Ponce.git",
-    "owner": "illera88",
-    "repo": "Ponce",
-    "status": "rate_limited",
-    "error": "API 限制，請設定 GitHub token"
+    "github_url": "https://github.com/L4ys/LazyCross.git",
+    "stars": 112,
+    "last_updated": "2025-07-26T09:58:48Z",
+    "description": "An IDA Pro plugin that display cross-references to functions or variables across the entire binary in Hex-Rays pseudocode",
+    "language": "Python",
+    "archived": false,
+    "fork": false,
+    "status": "success"
   },
   {
     "name": "plugins/IdaClu",
@@ -534,8 +657,14 @@
     "url": "https://github.com/harlamism/IdaClu.git",
     "owner": "harlamism",
     "repo": "IdaClu",
-    "status": "rate_limited",
-    "error": "API 限制，請設定 GitHub token"
+    "github_url": "https://github.com/harlamism/IdaClu.git",
+    "stars": 170,
+    "last_updated": "2025-07-25T11:04:27Z",
+    "description": "IdaClu is a version agnostic IDA Pro plugin for grouping similar functions. Pick an existing grouping algorithm or create your own.",
+    "language": "Python",
+    "archived": false,
+    "fork": false,
+    "status": "success"
   },
   {
     "name": "plugins/sigmakerex",
@@ -543,8 +672,14 @@
     "url": "https://github.com/kweatherman/sigmakerex.git",
     "owner": "kweatherman",
     "repo": "sigmakerex",
-    "status": "rate_limited",
-    "error": "API 限制，請設定 GitHub token"
+    "github_url": "https://github.com/kweatherman/sigmakerex.git",
+    "stars": 413,
+    "last_updated": "2025-07-27T14:18:24Z",
+    "description": "Enhanced IDA Pro signature generator plugin.",
+    "language": "C++",
+    "archived": false,
+    "fork": false,
+    "status": "success"
   },
   {
     "name": "plugins/HexForge",
@@ -552,8 +687,14 @@
     "url": "https://github.com/elastic/HexForge.git",
     "owner": "elastic",
     "repo": "HexForge",
-    "status": "rate_limited",
-    "error": "API 限制，請設定 GitHub token"
+    "github_url": "https://github.com/elastic/HexForge.git",
+    "stars": 84,
+    "last_updated": "2025-06-24T07:22:51Z",
+    "description": "This IDA plugin extends the functionality of the assembly and hex view. With this plugin, you can conveniently decode/decrypt/alter data directly from the IDA Pro interface. ",
+    "language": "Python",
+    "archived": false,
+    "fork": false,
+    "status": "success"
   },
   {
     "name": "plugins/ida-mcp-server-plugin",
@@ -561,8 +702,14 @@
     "url": "https://github.com/taida957789/ida-mcp-server-plugin.git",
     "owner": "taida957789",
     "repo": "ida-mcp-server-plugin",
-    "status": "rate_limited",
-    "error": "API 限制，請設定 GitHub token"
+    "github_url": "https://github.com/taida957789/ida-mcp-server-plugin.git",
+    "stars": 137,
+    "last_updated": "2025-07-27T01:47:19Z",
+    "description": "IDA Pro Plugin for serving MCP SSE server for cursor / claude",
+    "language": "Python",
+    "archived": false,
+    "fork": false,
+    "status": "success"
   },
   {
     "name": "plugins/ida-pro-loadmap",
@@ -570,8 +717,14 @@
     "url": "https://github.com/mefistotelis/ida-pro-loadmap.git",
     "owner": "mefistotelis",
     "repo": "ida-pro-loadmap",
-    "status": "rate_limited",
-    "error": "API 限制，請設定 GitHub token"
+    "github_url": "https://github.com/mefistotelis/ida-pro-loadmap.git",
+    "stars": 149,
+    "last_updated": "2025-06-16T23:38:22Z",
+    "description": "Plugin for IDA Pro disassembler which allows loading .map files.",
+    "language": "C++",
+    "archived": false,
+    "fork": false,
+    "status": "success"
   },
   {
     "name": "plugins/IDA_Ollvm-unflattener",
@@ -579,17 +732,14 @@
     "url": "https://github.com/maskelihileci/IDA_Ollvm-unflattener.git",
     "owner": "maskelihileci",
     "repo": "IDA_Ollvm-unflattener",
-    "status": "rate_limited",
-    "error": "API 限制，請設定 GitHub token"
-  },
-  {
-    "name": "plugins/ida-pysigmaker",
-    "path": "plugins/ida-pysigmaker",
-    "url": "https://github.com/mahmoudimus/ida-pysigmaker.git",
-    "owner": "mahmoudimus",
-    "repo": "ida-pysigmaker",
-    "status": "rate_limited",
-    "error": "API 限制，請設定 GitHub token"
+    "github_url": "https://github.com/maskelihileci/IDA_Ollvm-unflattener.git",
+    "stars": 40,
+    "last_updated": "2025-07-20T13:40:42Z",
+    "description": "Control Flow Flattening Deobfuscator for Obfuscator-LLVM as a plugin for IDA Pro.",
+    "language": "Python",
+    "archived": false,
+    "fork": false,
+    "status": "success"
   },
   {
     "name": "plugins/IDA-MapSymbolParser",
@@ -597,8 +747,14 @@
     "url": "https://github.com/gmh5225/IDA-MapSymbolParser.git",
     "owner": "gmh5225",
     "repo": "IDA-MapSymbolParser",
-    "status": "rate_limited",
-    "error": "API 限制，請設定 GitHub token"
+    "github_url": "https://github.com/gmh5225/IDA-MapSymbolParser.git",
+    "stars": 22,
+    "last_updated": "2025-05-25T13:54:39Z",
+    "description": "IDA Map File Symbol Renamer",
+    "language": "Python",
+    "archived": false,
+    "fork": false,
+    "status": "success"
   },
   {
     "name": "plugins/WPeChatGPT",
@@ -606,8 +762,14 @@
     "url": "https://github.com/WPeace-HcH/WPeChatGPT.git",
     "owner": "WPeace-HcH",
     "repo": "WPeChatGPT",
-    "status": "rate_limited",
-    "error": "API 限制，請設定 GitHub token"
+    "github_url": "https://github.com/WPeace-HcH/WPeChatGPT.git",
+    "stars": 1196,
+    "last_updated": "2025-07-27T11:43:47Z",
+    "description": "A plugin for IDA that can help to analyze binary file, it can be based on commonly used AI big models such as OpenAI and DeepSeek.",
+    "language": "Python",
+    "archived": false,
+    "fork": false,
+    "status": "success"
   },
   {
     "name": "plugins/IDAFrida",
@@ -615,8 +777,14 @@
     "url": "https://github.com/P4nda0s/IDAFrida.git",
     "owner": "P4nda0s",
     "repo": "IDAFrida",
-    "status": "rate_limited",
-    "error": "API 限制，請設定 GitHub token"
+    "github_url": "https://github.com/P4nda0s/IDAFrida.git",
+    "stars": 311,
+    "last_updated": "2025-07-21T14:52:25Z",
+    "description": "IDA Frida Plugin for tracing something interesting.",
+    "language": "Python",
+    "archived": false,
+    "fork": false,
+    "status": "success"
   },
   {
     "name": "plugins/AntiXorstr",
@@ -624,8 +792,14 @@
     "url": "https://github.com/lstaroth/AntiXorstr.git",
     "owner": "lstaroth",
     "repo": "AntiXorstr",
-    "status": "rate_limited",
-    "error": "API 限制，請設定 GitHub token"
+    "github_url": "https://github.com/lstaroth/AntiXorstr.git",
+    "stars": 141,
+    "last_updated": "2025-07-27T11:26:42Z",
+    "description": "IDA Pro plugin AntiXorstr",
+    "language": "Python",
+    "archived": false,
+    "fork": false,
+    "status": "success"
   },
   {
     "name": "plugins/ida-function-string-associate",
@@ -633,8 +807,14 @@
     "url": "https://github.com/oxiKKK/ida-function-string-associate.git",
     "owner": "oxiKKK",
     "repo": "ida-function-string-associate",
-    "status": "rate_limited",
-    "error": "API 限制，請設定 GitHub token"
+    "github_url": "https://github.com/oxiKKK/ida-function-string-associate.git",
+    "stars": 10,
+    "last_updated": "2025-07-27T16:36:00Z",
+    "description": "IDA 9.0 Function String Associate Plugin",
+    "language": "Python",
+    "archived": false,
+    "fork": false,
+    "status": "success"
   },
   {
     "name": "plugins/retdec-idaplugin",
@@ -642,8 +822,14 @@
     "url": "https://github.com/avast/retdec-idaplugin.git",
     "owner": "avast",
     "repo": "retdec-idaplugin",
-    "status": "rate_limited",
-    "error": "API 限制，請設定 GitHub token"
+    "github_url": "https://github.com/avast/retdec-idaplugin.git",
+    "stars": 781,
+    "last_updated": "2025-07-15T16:34:09Z",
+    "description": "RetDec plugin for IDA",
+    "language": "C++",
+    "archived": false,
+    "fork": false,
+    "status": "success"
   },
   {
     "name": "plugins/labeless",
@@ -651,8 +837,14 @@
     "url": "https://github.com/a1ext/labeless.git",
     "owner": "a1ext",
     "repo": "labeless",
-    "status": "rate_limited",
-    "error": "API 限制，請設定 GitHub token"
+    "github_url": "https://github.com/a1ext/labeless.git",
+    "stars": 555,
+    "last_updated": "2025-07-27T10:11:55Z",
+    "description": "Labeless is a multipurpose IDA Pro plugin system for labels/comments synchronization with a debugger backend, with complex memory dumping and interactive Python scripting capabilities.",
+    "language": "C++",
+    "archived": false,
+    "fork": false,
+    "status": "success"
   },
   {
     "name": "plugins/ida_missinglink",
@@ -660,8 +852,14 @@
     "url": "https://github.com/kweatherman/ida_missinglink.git",
     "owner": "kweatherman",
     "repo": "ida_missinglink",
-    "status": "rate_limited",
-    "error": "API 限制，請設定 GitHub token"
+    "github_url": "https://github.com/kweatherman/ida_missinglink.git",
+    "stars": 133,
+    "last_updated": "2025-07-21T23:21:59Z",
+    "description": "IDA Plugin that fills in missing indirect CALL & JMP target information",
+    "language": "C++",
+    "archived": false,
+    "fork": false,
+    "status": "success"
   },
   {
     "name": "plugins/LabSync",
@@ -669,8 +867,14 @@
     "url": "https://github.com/cellebrite-labs/LabSync.git",
     "owner": "cellebrite-labs",
     "repo": "LabSync",
-    "status": "rate_limited",
-    "error": "API 限制，請設定 GitHub token"
+    "github_url": "https://github.com/cellebrite-labs/LabSync.git",
+    "stars": 129,
+    "last_updated": "2025-07-21T06:32:00Z",
+    "description": "An IDA plugin that can be used to partially synchronize IDBs between different users reversing the same binaries",
+    "language": "Python",
+    "archived": false,
+    "fork": false,
+    "status": "success"
   },
   {
     "name": "plugins/FunctionInliner",
@@ -678,8 +882,14 @@
     "url": "https://github.com/cellebrite-labs/FunctionInliner.git",
     "owner": "cellebrite-labs",
     "repo": "FunctionInliner",
-    "status": "rate_limited",
-    "error": "API 限制，請設定 GitHub token"
+    "github_url": "https://github.com/cellebrite-labs/FunctionInliner.git",
+    "stars": 211,
+    "last_updated": "2025-07-08T16:36:58Z",
+    "description": "An IDA plugin that eases reversing of binaries that have been code-size-optimized with function outlining",
+    "language": "C",
+    "archived": false,
+    "fork": false,
+    "status": "success"
   },
   {
     "name": "plugins/ida_haru",
@@ -687,8 +897,14 @@
     "url": "https://github.com/TakahiroHaruyama/ida_haru.git",
     "owner": "TakahiroHaruyama",
     "repo": "ida_haru",
-    "status": "rate_limited",
-    "error": "API 限制，請設定 GitHub token"
+    "github_url": "https://github.com/TakahiroHaruyama/ida_haru.git",
+    "stars": 175,
+    "last_updated": "2025-07-27T11:27:49Z",
+    "description": "scripts/plugins for IDA Pro",
+    "language": "Python",
+    "archived": false,
+    "fork": false,
+    "status": "success"
   },
   {
     "name": "plugins/ClassMaker",
@@ -696,8 +912,14 @@
     "url": "https://github.com/Pycatchown/ClassMaker.git",
     "owner": "Pycatchown",
     "repo": "ClassMaker",
-    "status": "rate_limited",
-    "error": "API 限制，請設定 GitHub token"
+    "github_url": "https://github.com/Pycatchown/ClassMaker.git",
+    "stars": 17,
+    "last_updated": "2025-07-11T01:40:34Z",
+    "description": "IDA plugin to make classes automatically",
+    "language": "Python",
+    "archived": false,
+    "fork": false,
+    "status": "success"
   },
   {
     "name": "plugins/ida-venv",
@@ -705,8 +927,14 @@
     "url": "https://github.com/Skwteinopteros/ida-venv.git",
     "owner": "Skwteinopteros",
     "repo": "ida-venv",
-    "status": "rate_limited",
-    "error": "API 限制，請設定 GitHub token"
+    "github_url": "https://github.com/Skwteinopteros/ida-venv.git",
+    "stars": 16,
+    "last_updated": "2025-07-02T13:56:55Z",
+    "description": "An IDA Pro plugin to allow use of Python venvs",
+    "language": "Python",
+    "archived": false,
+    "fork": false,
+    "status": "success"
   },
   {
     "name": "plugins/IDAComments",
@@ -714,8 +942,14 @@
     "url": "https://github.com/NoneShell/IDAComments.git",
     "owner": "NoneShell",
     "repo": "IDAComments",
-    "status": "rate_limited",
-    "error": "API 限制，請設定 GitHub token"
+    "github_url": "https://github.com/NoneShell/IDAComments.git",
+    "stars": 22,
+    "last_updated": "2025-07-16T09:58:28Z",
+    "description": "a IDA plugin helps you to manage your IDA Comments",
+    "language": "Python",
+    "archived": false,
+    "fork": false,
+    "status": "success"
   },
   {
     "name": "plugins/x64dbgida",
@@ -723,7 +957,358 @@
     "url": "https://github.com/x64dbg/x64dbgida.git",
     "owner": "x64dbg",
     "repo": "x64dbgida",
-    "status": "rate_limited",
-    "error": "API 限制，請設定 GitHub token"
+    "github_url": "https://github.com/x64dbg/x64dbgida.git",
+    "stars": 520,
+    "last_updated": "2025-07-18T18:12:28Z",
+    "description": "Official x64dbg plugin for IDA Pro.",
+    "language": "Python",
+    "archived": false,
+    "fork": false,
+    "status": "success"
+  },
+  {
+    "name": "plugins/build-bindiff-for-ida-9",
+    "path": "plugins/build-bindiff-for-ida-9",
+    "url": "https://github.com/Lil-Ran/build-bindiff-for-ida-9.git",
+    "owner": "Lil-Ran",
+    "repo": "build-bindiff-for-ida-9",
+    "github_url": "https://github.com/Lil-Ran/build-bindiff-for-ida-9.git",
+    "stars": 73,
+    "last_updated": "2025-07-27T11:21:11Z",
+    "description": "Use GitHub Actions to build bleeding BinDiff 8 and BinExport 12 for various IDA Pro 9.x on Windows, macOS, and Linux.",
+    "language": null,
+    "archived": false,
+    "fork": false,
+    "status": "success"
+  },
+  {
+    "name": "plugins/ida-pro-idb-database",
+    "path": "plugins/ida-pro-idb-database",
+    "url": "https://github.com/zengfr/ida-pro-idb-database.git",
+    "owner": "zengfr",
+    "repo": "ida-pro-idb-database",
+    "github_url": "https://github.com/zengfr/ida-pro-idb-database.git",
+    "stars": 29,
+    "last_updated": "2025-07-27T11:31:26Z",
+    "description": "many of ida pro idb database  for game hacking and reverse analysis engineering.good luck.",
+    "language": "Python",
+    "archived": false,
+    "fork": false,
+    "status": "success"
+  },
+  {
+    "name": "plugins/HexRaysCodeXplorer_plugin_for_ida_pro",
+    "path": "plugins/HexRaysCodeXplorer_plugin_for_ida_pro",
+    "url": "https://github.com/zengfr/HexRaysCodeXplorer_plugin_for_ida_pro.git",
+    "owner": "zengfr",
+    "repo": "HexRaysCodeXplorer_plugin_for_ida_pro",
+    "github_url": "https://github.com/zengfr/HexRaysCodeXplorer_plugin_for_ida_pro.git",
+    "stars": 23,
+    "last_updated": "2025-07-27T11:32:18Z",
+    "description": "Hex-Rays Decompiler plugin for better code navigation. plugin for IDA Pro.",
+    "language": "C++",
+    "archived": false,
+    "fork": false,
+    "status": "success"
+  },
+  {
+    "name": "plugins/pyidbutil",
+    "path": "plugins/pyidbutil",
+    "url": "https://github.com/nlitsme/pyidbutil.git",
+    "owner": "nlitsme",
+    "repo": "pyidbutil",
+    "github_url": "https://github.com/nlitsme/pyidbutil.git",
+    "stars": 150,
+    "last_updated": "2025-07-27T11:26:32Z",
+    "description": "A python library for reading IDA pro databases.",
+    "language": "Python",
+    "archived": false,
+    "fork": false,
+    "status": "success"
+  },
+  {
+    "name": "plugins/ida2py",
+    "path": "plugins/ida2py",
+    "url": "https://github.com/junron/ida2py.git",
+    "owner": "junron",
+    "repo": "ida2py",
+    "github_url": "https://github.com/junron/ida2py.git",
+    "stars": 158,
+    "last_updated": "2025-07-27T11:26:19Z",
+    "description": "An intuitive query API for IDA Pro",
+    "language": "Python",
+    "archived": false,
+    "fork": false,
+    "status": "success"
+  },
+  {
+    "name": "plugins/ipyida",
+    "path": "plugins/ipyida",
+    "url": "https://github.com/eset/ipyida.git",
+    "owner": "eset",
+    "repo": "ipyida",
+    "github_url": "https://github.com/eset/ipyida.git",
+    "stars": 787,
+    "last_updated": "2025-07-26T23:16:27Z",
+    "description": "IPython console integration for IDA Pro",
+    "language": "Python",
+    "archived": false,
+    "fork": false,
+    "status": "success"
+  },
+  {
+    "name": "plugins/flare-vm",
+    "path": "plugins/flare-vm",
+    "url": "https://github.com/mandiant/flare-vm.git",
+    "owner": "mandiant",
+    "repo": "flare-vm",
+    "github_url": "https://github.com/mandiant/flare-vm.git",
+    "stars": 7525,
+    "last_updated": "2025-07-27T15:51:18Z",
+    "description": "A collection of software installations scripts for Windows systems that allows you to easily setup and maintain a reverse engineering environment on a VM.",
+    "language": "PowerShell",
+    "archived": false,
+    "fork": false,
+    "status": "success"
+  },
+  {
+    "name": "plugins/fentapatch",
+    "path": "plugins/fentapatch",
+    "url": "https://github.com/CrackerCat/fentapatch.git",
+    "owner": "CrackerCat",
+    "repo": "fentapatch",
+    "github_url": "https://github.com/CrackerCat/fentapatch.git",
+    "stars": 5,
+    "last_updated": "2025-05-17T06:12:19Z",
+    "description": "IDA Pro 9+ Binary Patching",
+    "language": "Python",
+    "archived": false,
+    "fork": false,
+    "status": "success"
+  },
+  {
+    "name": "plugins/ida-pro-function-hunter",
+    "path": "plugins/ida-pro-function-hunter",
+    "url": "https://github.com/alexander-pick/ida-pro-function-hunter.git",
+    "owner": "alexander-pick",
+    "repo": "ida-pro-function-hunter",
+    "github_url": "https://github.com/alexander-pick/ida-pro-function-hunter.git",
+    "stars": 20,
+    "last_updated": "2025-05-09T08:55:11Z",
+    "description": "IDA Pro script to find interesting syscalls and patterns in binaries",
+    "language": "Python",
+    "archived": false,
+    "fork": false,
+    "status": "success"
+  },
+  {
+    "name": "plugins/AutoStruct",
+    "path": "plugins/AutoStruct",
+    "url": "https://github.com/islipnot/AutoStruct.git",
+    "owner": "islipnot",
+    "repo": "AutoStruct",
+    "github_url": "https://github.com/islipnot/AutoStruct.git",
+    "stars": 6,
+    "last_updated": "2025-05-31T05:23:59Z",
+    "description": "Easing the integration of structs and enums between C++ and IDA Pro.",
+    "language": "C++",
+    "archived": false,
+    "fork": false,
+    "status": "success"
+  },
+  {
+    "name": "scripts/ida-scripts",
+    "path": "scripts/ida-scripts",
+    "url": "https://github.com/doronz88/ida-scripts.git",
+    "owner": "doronz88",
+    "repo": "ida-scripts",
+    "github_url": "https://github.com/doronz88/ida-scripts.git",
+    "stars": 52,
+    "last_updated": "2025-07-09T05:22:24Z",
+    "description": null,
+    "language": "Python",
+    "archived": false,
+    "fork": false,
+    "status": "success"
+  },
+  {
+    "name": "plugins/Better-printk-IDA9",
+    "path": "plugins/Better-printk-IDA9",
+    "url": "https://github.com/ZjW1nd/Better-printk-IDA9.git",
+    "owner": "ZjW1nd",
+    "repo": "Better-printk-IDA9",
+    "github_url": "https://github.com/ZjW1nd/Better-printk-IDA9.git",
+    "stars": 5,
+    "last_updated": "2025-05-17T11:15:20Z",
+    "description": "Better printk display plugin for IDA (9.0).",
+    "language": "Python",
+    "archived": false,
+    "fork": false,
+    "status": "success"
+  },
+  {
+    "name": "plugins/emuit",
+    "path": "plugins/emuit",
+    "url": "https://github.com/AzzOnFire/emuit.git",
+    "owner": "AzzOnFire",
+    "repo": "emuit",
+    "github_url": "https://github.com/AzzOnFire/emuit.git",
+    "stars": 33,
+    "last_updated": "2025-05-28T15:31:50Z",
+    "description": "Easy-to-use IDA plugin for code emulation",
+    "language": "Python",
+    "archived": false,
+    "fork": false,
+    "status": "success"
+  },
+  {
+    "name": "plugins/IDA-Assistant",
+    "path": "plugins/IDA-Assistant",
+    "url": "https://github.com/stuxnet147/IDA-Assistant.git",
+    "owner": "stuxnet147",
+    "repo": "IDA-Assistant",
+    "github_url": "https://github.com/stuxnet147/IDA-Assistant.git",
+    "stars": 69,
+    "last_updated": "2025-07-07T03:58:23Z",
+    "description": "IDA plugin to support automatic reverse engineering",
+    "language": "Python",
+    "archived": false,
+    "fork": false,
+    "status": "success"
+  },
+  {
+    "name": "plugins/Android-JNI-Helper",
+    "path": "plugins/Android-JNI-Helper",
+    "url": "https://github.com/reveny/Android-JNI-Helper.git",
+    "owner": "reveny",
+    "repo": "Android-JNI-Helper",
+    "github_url": "https://github.com/reveny/Android-JNI-Helper.git",
+    "stars": 79,
+    "last_updated": "2025-07-21T17:28:56Z",
+    "description": "A header-only C++ library that makes working with the Java Native Interface (JNI) safer and more convenient.",
+    "language": "C++",
+    "archived": false,
+    "fork": false,
+    "status": "success"
+  },
+  {
+    "name": "plugins/REDasm",
+    "path": "plugins/REDasm",
+    "url": "https://github.com/REDasmOrg/REDasm.git",
+    "owner": "REDasmOrg",
+    "repo": "REDasm",
+    "github_url": "https://github.com/REDasmOrg/REDasm.git",
+    "stars": 1657,
+    "last_updated": "2025-07-26T22:45:31Z",
+    "description": "The OpenSource Disassembler",
+    "language": "C++",
+    "archived": false,
+    "fork": false,
+    "status": "success"
+  },
+  {
+    "name": "plugins/reversinglabs-yara-rules",
+    "path": "plugins/reversinglabs-yara-rules",
+    "url": "https://github.com/reversinglabs/reversinglabs-yara-rules.git",
+    "owner": "reversinglabs",
+    "repo": "reversinglabs-yara-rules",
+    "github_url": "https://github.com/reversinglabs/reversinglabs-yara-rules.git",
+    "stars": 834,
+    "last_updated": "2025-07-24T09:56:14Z",
+    "description": "ReversingLabs YARA Rules",
+    "language": "YARA",
+    "archived": false,
+    "fork": false,
+    "status": "success"
+  },
+  {
+    "name": "plugins/binsync",
+    "path": "plugins/binsync",
+    "url": "https://github.com/binsync/binsync.git",
+    "owner": "binsync",
+    "repo": "binsync",
+    "github_url": "https://github.com/binsync/binsync.git",
+    "stars": 651,
+    "last_updated": "2025-07-25T17:47:50Z",
+    "description": "A reversing plugin for cross-decompiler collaboration, built on git. ",
+    "language": "Python",
+    "archived": false,
+    "fork": false,
+    "status": "success"
+  },
+  {
+    "name": "plugins/binexport",
+    "path": "plugins/binexport",
+    "url": "https://github.com/google/binexport.git",
+    "owner": "google",
+    "repo": "binexport",
+    "github_url": "https://github.com/google/binexport.git",
+    "stars": 1128,
+    "last_updated": "2025-07-27T03:08:40Z",
+    "description": "Export disassemblies into Protocol Buffers",
+    "language": "C++",
+    "archived": false,
+    "fork": false,
+    "status": "success"
+  },
+  {
+    "name": "plugins/fa",
+    "path": "plugins/fa",
+    "url": "https://github.com/doronz88/fa.git",
+    "owner": "doronz88",
+    "repo": "fa",
+    "github_url": "https://github.com/doronz88/fa.git",
+    "stars": 91,
+    "last_updated": "2025-06-14T22:11:18Z",
+    "description": "Automation tool for locating symbols & structs in binary (primary IDA focused)",
+    "language": "Python",
+    "archived": false,
+    "fork": false,
+    "status": "success"
+  },
+  {
+    "name": "plugins/hexinlay",
+    "path": "plugins/hexinlay",
+    "url": "https://github.com/milankovo/hexinlay.git",
+    "owner": "milankovo",
+    "repo": "hexinlay",
+    "github_url": "https://github.com/milankovo/hexinlay.git",
+    "stars": 66,
+    "last_updated": "2025-07-08T16:37:41Z",
+    "description": "Inlay hints for hex-rays",
+    "language": "Python",
+    "archived": false,
+    "fork": false,
+    "status": "success"
+  },
+  {
+    "name": "plugins/augur",
+    "path": "plugins/augur",
+    "url": "https://github.com/0xdea/augur.git",
+    "owner": "0xdea",
+    "repo": "augur",
+    "github_url": "https://github.com/0xdea/augur.git",
+    "stars": 49,
+    "last_updated": "2025-07-25T07:29:50Z",
+    "description": "Reverse engineering assistant that extracts strings and related pseudo-code from a binary file.",
+    "language": "Rust",
+    "archived": false,
+    "fork": false,
+    "status": "success"
+  },
+  {
+    "name": "plugins/xdefla",
+    "path": "plugins/xdefla",
+    "url": "https://github.com/jiutian666/xdefla.git",
+    "owner": "jiutian666",
+    "repo": "xdefla",
+    "github_url": "https://github.com/jiutian666/xdefla.git",
+    "stars": 35,
+    "last_updated": "2025-07-14T06:12:14Z",
+    "description": "fla反混淆",
+    "language": "Python",
+    "archived": false,
+    "fork": false,
+    "status": "success"
   }
 ]

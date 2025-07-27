@@ -8,3 +8,4 @@ submodule_update_log.json
 repo_progress.json
 scripts/
 modules/
+.env
