@@ -6,6 +6,7 @@ __pycache__/
 repo_info.json
 submodule_update_log.json
 repo_progress.json
-scripts/
+# scripts/*
+# !scripts/ida-scripts2/
 modules/
 .env

@@ -348,3 +348,7 @@
 [submodule "plugins/idamagicstrings"]
 	path = plugins/idamagicstrings
 	url = https://github.com/joxeankoret/idamagicstrings.git
+
+#https://github.com/jiqiu2022/Tenet-IDA9.0.git
+[submodule "plugins/Tenet-IDA9.0"]
+	path = plugins/Tenet-IDA9.0

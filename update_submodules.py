@@ -3,14 +3,13 @@
 更新 .gitmodules 中的所有 submodule
 支援批量更新、失敗重試、和詳細進度顯示
 """
-
 import subprocess
-import json
-import time
 import os
 import sys
+import time
+import json
 from datetime import datetime
-from typing import List, Dict, Optional
+from typing import List, Dict
 
 def run_command(cmd: str, cwd: str = None, timeout: int = 300) -> Dict:
     """執行命令並返回結果"""
@@ -47,42 +46,91 @@ def run_command(cmd: str, cwd: str = None, timeout: int = 300) -> Dict:
             'command': cmd
         }
 
+def parse_gitmodules() -> List[Dict]:
+    """從 .gitmodules 文件讀取子模組配置"""
+    if not os.path.exists('.gitmodules'):
+        print("❌ 找不到 .gitmodules 文件")
+        return []
+        
+    result = run_command("git config -f .gitmodules --list")
+    
+    if not result['success']:
+        print(f"❌ 無法讀取 .gitmodules: {result['stderr']}")
+        return []
+        
+    submodules = []
+    current_path = None
+    current_url = None
+    
+    for line in result['stdout'].split('\n'):
+        if line.startswith('submodule.'):
+            parts = line.split('=', 1)
+            if len(parts) == 2:
+                key = parts[0].strip()
+                value = parts[1].strip()
+                
+                if key.endswith('.path'):
+                    current_path = value
+                elif key.endswith('.url'):
+                    current_url = value
+                    
+                # 當有了 path 和 url 就可以添加
+                if current_path and current_url:
+                    submodules.append({'path': current_path, 'url': current_url})
+                    current_path = None
+                    current_url = None
+    
+    return submodules
+
 def get_submodule_status() -> List[Dict]:
     """獲取所有 submodule 的狀態"""
     print("📋 獲取 submodule 狀態...")
     
-    # 獲取 submodule 列表
-    result = run_command("git submodule status")
-    if not result['success']:
-        print(f"❌ 無法獲取 submodule 狀態: {result['stderr']}")
+    # 從 .gitmodules 獲取子模組列表
+    submodules = parse_gitmodules()
+    if not submodules:
         return []
     
-    submodules = []
-    for line in result['stdout'].split('\n'):
-        if line.strip():
-            # 解析 git submodule status 輸出
-            # 格式: [狀態字元]commit_hash path (tag/branch)
-            parts = line.strip().split()
-            if len(parts) >= 2:
-                status_char = line[0] if line[0] in [' ', '-', '+', 'U'] else ' '
-                commit_hash = parts[0].lstrip(' -+U')
-                path = parts[1]
-                
-                # 獲取額外資訊
-                submodule_info = {
-                    'path': path,
-                    'commit': commit_hash,
-                    'status_char': status_char,
-                    'initialized': status_char != '-',
-                    'up_to_date': status_char == ' ',
-                    'has_changes': status_char == '+',
-                    'uninitialized': status_char == '-',
-                    'merge_conflict': status_char == 'U'
-                }
-                
-                submodules.append(submodule_info)
+    for submodule in submodules:
+        path = submodule['path']
+        # 獲取子模組狀態
+        status_result = run_command(f"git submodule status {path}")
+        if status_result['success'] and status_result['stdout']:
+            line = status_result['stdout'].strip()
+            status_char = line[0] if line[0] in [' ', '-', '+', 'U'] else ' '
+            commit_hash = line[1:41] if len(line) > 41 else ''
+            # 更新子模組資訊g95
+            submodule.update({
+                'commit': commit_hash,
+                'status_char': status_char,
+                'initialized': status_char != '-',
+                'up_to_date': status_char == ' ',
+                'has_changes': status_char == '+',
+                'uninitialized': status_char == '-',
+                'merge_conflict': status_char == 'U'
+            })
+        else:
+            # 如果無法獲取狀態，設置預設值
+            submodule.update({
+                'commit': '',
+                'status_char': '-',
+                'initialized': False,
+                'up_to_date': False,
+                'has_changes': False,
+                'uninitialized': True,
+                'merge_conflict': False
+            })
     
     return submodules
+
+# def update_submodule(submodule: Dict, force: bool = False) -> Dict:
+#     """更新單個 submodule"""
+#     path = submodule['path']
+#     print(f"🔄 更新 {path}...", end=' ')
+
+#     start_time = time.time()
+    
+#     return submodule
 
 def update_submodule(submodule: Dict, force: bool = False) -> Dict:
     """更新單個 submodule"""
@@ -151,11 +199,65 @@ def save_update_log(results: List[Dict], filename: str = 'submodule_update_log.j
     
     return log_data
 
+def clean_orphaned_submodules() -> None:
+    """清理不在 .gitmodules 中的 submodule 目錄"""
+    print("🧹 檢查孤立的 submodule 目錄...")
+    
+    # 獲取 .gitmodules 中的有效路徑
+    valid_submodules = parse_gitmodules()
+    valid_paths = {sm['path'] for sm in valid_submodules}
+    
+    # 掃描現有目錄
+    existing_dirs = set()
+    for base_dir in ['plugins', 'scripts', 'modules']:
+        if os.path.exists(base_dir):
+            for item in os.listdir(base_dir):
+                item_path = os.path.join(base_dir, item)
+                if os.path.isdir(item_path) and not item.startswith('.'):
+                    existing_dirs.add(item_path)
+    
+    # 找出孤立的目錄
+    orphaned_dirs = existing_dirs - valid_paths
+    
+    if not orphaned_dirs:
+        print("✅ 沒有發現孤立的 submodule 目錄")
+        return
+    
+    print(f"🗑️ 發現 {len(orphaned_dirs)} 個孤立的目錄:")
+    for dir_path in sorted(orphaned_dirs):
+        print(f"  • {dir_path}")
+    
+    if input("\n是否確認刪除這些目錄? (y/N): ").lower() != 'y':
+        print("❌ 取消刪除操作")
+        return
+    
+    # 刪除孤立目錄
+    success_count = 0
+    for dir_path in orphaned_dirs:
+        try:
+            if os.path.exists(dir_path):
+                import shutil
+                shutil.rmtree(dir_path)
+                print(f"✅ 已刪除: {dir_path}")
+                success_count += 1
+                
+                # 同時清理 .git/modules 中的相關文件
+                modules_path = f".git/modules/{dir_path}"
+                if os.path.exists(modules_path):
+                    shutil.rmtree(modules_path)
+                    print(f"🧹 已清理: {modules_path}")
+                    
+        except Exception as e:
+            print(f"❌ 刪除失敗 {dir_path}: {e}")
+    
+    print(f"\n📊 清理完成: 成功刪除 {success_count} 個目錄")
+
 def main():
     """主函數"""
     # 解析命令行參數
     force_update = '--force' in sys.argv
     skip_failed = '--skip-failed' in sys.argv
+    clean_orphaned = '--clean' in sys.argv  # 新增清理選項
     retry_count = 1
     
     if '--retry' in sys.argv:
@@ -167,13 +269,18 @@ def main():
     
     print("🔄 批量更新 Git Submodules")
     print("=" * 60)
-    print(f"選項: 強制更新={force_update}, 跳過失敗={skip_failed}, 重試次數={retry_count}")
+    print(f"選項: 強制更新={force_update}, 跳過失敗={skip_failed}, 清理孤立目錄={clean_orphaned}, 重試次數={retry_count}")
     print()
     
     # 確認在 git 倉庫中
     if not os.path.exists('.git'):
         print("❌ 當前目錄不是 Git 倉庫")
         return
+    
+    # 如果指定了清理選項，先執行清理
+    if clean_orphaned:
+        clean_orphaned_submodules()
+        print()
     
     # 獲取 submodule 狀態
     submodules = get_submodule_status()
@@ -211,7 +318,7 @@ def main():
         else:
             print("🚀 開始更新所有 submodule...")
             submodules_to_process = submodules
-        
+    
         current_results = []
         
         for i, submodule in enumerate(submodules_to_process):
@@ -281,6 +388,38 @@ def main():
         print("3. 推送到遠端:")
         print("   git push")
 
+def remove_failed_submodule(path: str) -> bool:
+    """移除失敗的 submodule"""
+    print(f"🗑️ 移除失敗的 submodule: {path}")
+    
+    try:
+        # 1. 從 .gitmodules 移除
+        result1 = run_command(f"git config -f .gitmodules --remove-section submodule.{path}")
+        
+        # 2. 從 .git/config 移除
+        result2 = run_command(f"git config --remove-section submodule.{path}")
+        
+        # 3. 從 Git 索引移除
+        result3 = run_command(f"git rm --cached {path}")
+        
+        # 4. 刪除目錄
+        if os.path.exists(path):
+            import shutil
+            shutil.rmtree(path)
+        
+        # 5. 刪除 .git/modules 中的文件
+        modules_path = f".git/modules/{path}"
+        if os.path.exists(modules_path):
+            import shutil
+            shutil.rmtree(modules_path)
+        
+        print(f"✅ 成功移除 {path}")
+        return True
+        
+    except Exception as e:
+        print(f"❌ 移除 {path} 時發生錯誤: {e}")
+        return False
+
 if __name__ == "__main__":
     if len(sys.argv) > 1 and sys.argv[1] in ['-h', '--help']:
         print("用法: python3 update_submodules.py [選項]")
@@ -289,12 +428,14 @@ if __name__ == "__main__":
         print("  --force        強制更新 (git submodule update --force)")
         print("  --skip-failed  跳過失敗的模組，不進行重試")
         print("  --retry N      失敗模組重試 N 次 (預設 1 次)")
+        print("  --clean        清理不在 .gitmodules 中的孤立目錄")
         print("  -h, --help     顯示此說明")
         print("")
         print("範例:")
         print("  python3 update_submodules.py")
         print("  python3 update_submodules.py --force")
-        print("  python3 update_submodules.py --retry 3")
+        print("  python3 update_submodules.py --clean")
+        print("  python3 update_submodules.py --retry 3 --clean")
         sys.exit(0)
     
     main()
